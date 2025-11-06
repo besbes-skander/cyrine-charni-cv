@@ -1,0 +1,42 @@
+{
+  "title": "🌈 Au-delà du travail",
+  "hobbies": [
+    {
+      "icon": "Heart",
+      "title": "Yoga matinal",
+      "description": "Mon rituel sacré pour démarrer la journée",
+      "color": "pink"
+    },
+    {
+      "icon": "Music",
+      "title": "Bachata",
+      "description": "Ma passion depuis 3 ans",
+      "color": "purple"
+    },
+    {
+      "icon": "Plane",
+      "title": "Voyages & randonnées",
+      "description": "Besoin de bouger, découvrir, m'évader",
+      "color": "blue"
+    },
+    {
+      "icon": "Book",
+      "title": "Lecture",
+      "description": "Développement perso, business, romans",
+      "color": "green"
+    },
+    {
+      "icon": "Sparkles",
+      "title": "Spiritualité",
+      "description": "Méditation, journaling, quête de sens",
+      "color": "yellow"
+    }
+  ],
+  "tagline": {
+    "text": "Mon équilibre :",
+    "parts": [
+      { "text": "bosser dur", "color": "pink" },
+      { "text": "vivre pleinement", "color": "purple" }
+    ]
+  }
+}

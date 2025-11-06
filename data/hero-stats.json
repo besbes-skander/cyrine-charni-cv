@@ -1,0 +1,16 @@
+{
+  "stats": [
+    {
+      "value": "150+",
+      "label": "Contrats signés",
+      "position": "bottom-left",
+      "color": "pink"
+    },
+    {
+      "value": "80K€",
+      "label": "CA généré",
+      "position": "top-right",
+      "color": "purple"
+    }
+  ]
+}

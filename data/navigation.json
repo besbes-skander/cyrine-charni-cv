@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "id": "a-propos", "label": "À propos" },
+    { "id": "competences", "label": "Compétences" },
+    { "id": "realisations", "label": "Réalisations" },
+    { "id": "contact", "label": "Contact" }
+  ]
+}

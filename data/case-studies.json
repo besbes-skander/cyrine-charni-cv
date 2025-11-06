@@ -1,0 +1,106 @@
+{
+  "caseStudies": [
+    {
+      "id": "mylerz",
+      "icon": "TrendingUp",
+      "color": "pink",
+      "title": "🚀 Comment j'ai généré 80K€ de CA en 1 an chez Mylerz",
+      "role": "Account Manager - Sales Executive",
+      "period": "Sept 2022 - Sept 2023",
+      "challenge": {
+        "title": "🎯 Le défi",
+        "points": [
+          "Marché ultra-compétitif (logistique e-commerce Tunisie)",
+          "Démarrage de zéro (pas de portefeuille existant)",
+          "Premier rôle commercial terrain",
+          "Objectifs ambitieux de CA"
+        ]
+      },
+      "strategy": {
+        "title": "💡 Ma stratégie",
+        "points": [
+          {
+            "text": "Prospection multicanale",
+            "detail": "50+ appels/jour, terrain, LinkedIn"
+          },
+          {
+            "text": "Écoute avant vente",
+            "detail": "1h découverte par lead"
+          },
+          {
+            "text": "Suivi rigoureux",
+            "detail": "Onboarding personnalisé + check-in hebdo"
+          }
+        ]
+      },
+      "results": [
+        { "label": "Contrats signés", "value": "150", "color": "pink" },
+        { "label": "CA généré", "value": "80K€", "color": "purple" },
+        { "label": "Taux rétention", "value": "92%", "color": "blue" },
+        { "label": "Taux conversion", "value": "40%", "color": "green" }
+      ]
+    },
+    {
+      "id": "formelab",
+      "icon": "Target",
+      "color": "purple",
+      "title": "🎨 Gestion de 60+ projets B2B chez For Me Lab",
+      "role": "Cheffe de Projet Sales & Marketing",
+      "period": "Sept 2024 - Sept 2025",
+      "challenge": {
+        "title": "🎯 Le défi",
+        "points": [
+          "Gérer 5-10 projets simultanés/mois",
+          "Coordonner clients + artisans + équipes internes",
+          "Respecter délais serrés (événements)",
+          "Jongler entre sales et ops"
+        ]
+      },
+      "strategy": {
+        "title": "💡 Ma stratégie",
+        "points": [
+          {
+            "text": "Cadrage précis",
+            "detail": "Brief validé avant lancement"
+          },
+          {
+            "text": "Coordination Notion",
+            "detail": "Kanban + Slack channels dédiés"
+          },
+          {
+            "text": "Sourcing smart",
+            "detail": "Négociation -12% coûts matières"
+          }
+        ]
+      },
+      "results": [
+        { "label": "Projets gérés", "value": "60+", "color": "purple" },
+        { "label": "Livraison délais", "value": "100%", "color": "green" },
+        { "label": "Satisfaction", "value": "4.8/5", "color": "blue" },
+        { "label": "Économies", "value": "-12%", "color": "pink" }
+      ]
+    },
+    {
+      "id": "hunteed",
+      "icon": "Users",
+      "color": "blue",
+      "title": "🎯 +600 leads qualifiés/mois chez HUNTEED",
+      "role": "Business Developer",
+      "period": "Janv 2024 - Juillet 2024",
+      "mission": {
+        "title": "💡 Ma mission",
+        "points": [
+          "Prospection multicanale (Salesforce, LinkedIn)",
+          "Conversion & qualification via HubSpot",
+          "Prise de RDV commerciaux",
+          "Gestion du closing"
+        ]
+      },
+      "impact": {
+        "value": "+600",
+        "label": "Leads qualifiés par mois",
+        "detail": "Via optimisation du pipeline Salesforce + LinkedIn Sales Navigator"
+      }
+    }
+  ]
+}

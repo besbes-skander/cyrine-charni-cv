@@ -1,0 +1,72 @@
+{
+  "coreSkills": [
+    {
+      "title": "Customer Success & Account Management",
+      "skills": [
+        "Gestion de portefeuille B2B",
+        "Onboarding & adoption",
+        "Upsell/Cross-sell",
+        "Rétention (NPS, CSAT)"
+      ]
+    },
+    {
+      "title": "Business Development",
+      "skills": [
+        "Prospection multicanale",
+        "Qualification & closing",
+        "Pipeline management",
+        "Négociation"
+      ]
+    },
+    {
+      "title": "Gestion de projet",
+      "skills": [
+        "Cadrage des besoins",
+        "Coordination multi-parties",
+        "Suivi budgétaire",
+        "Livraison délais"
+      ]
+    },
+    {
+      "title": "Data & Performance",
+      "skills": [
+        "Analyse KPI",
+        "Reporting",
+        "A/B testing",
+        "Optimisation conversion"
+      ]
+    }
+  ],
+  "toolStack": [
+    {
+      "category": "CRM & Sales",
+      "tools": [
+        "Salesforce ⭐⭐⭐⭐⭐",
+        "HubSpot ⭐⭐⭐⭐⭐",
+        "Sellsy ⭐⭐⭐⭐",
+        "LinkedIn Sales Navigator"
+      ]
+    },
+    {
+      "category": "Gestion de projet",
+      "tools": [
+        "Notion ⭐⭐⭐⭐⭐",
+        "Trello, Monday, Asana",
+        "ClickUp",
+        "Jira"
+      ]
+    },
+    {
+      "category": "AI & Productivité",
+      "tools": ["ChatGPT, Claude, Gemini", "Notion AI"]
+    },
+    {
+      "category": "Suite Office & Analytics",
+      "tools": [
+        "Excel, PowerPoint, Word",
+        "Google Analytics",
+        "Meta Business"
+      ]
+    }
+  ]
+}

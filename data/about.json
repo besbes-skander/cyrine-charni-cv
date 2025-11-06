@@ -1,0 +1,51 @@
+{
+  "journey": {
+    "title": "Mon parcours",
+    "content": "Je suis Cyrine, 30 ans, Tunisienne installée à Paris depuis 2 ans. Mon parcours ? Un mélange de marketing digital, de vente terrain et de gestion de projets.\n\nEn 2022, j'ai quitté la Tunisie pour me challenger en France. J'ai repris les études en alternance (Mastère Business Development) tout en bossant chez For Me Lab. Aujourd'hui, je cherche ma prochaine aventure dans une scale-up où je pourrai combiner ce que j'aime : la relation client, l'autonomie et les résultats concrets.",
+    "highlights": [
+      { "text": "marketing digital", "color": "pink" },
+      { "text": "vente terrain", "color": "purple" },
+      { "text": "gestion de projets", "color": "blue" }
+    ]
+  },
+  "motivations": [
+    {
+      "icon": "✨",
+      "title": "Autonomie & liberté",
+      "description": "Je m'épanouis quand on me fait confiance et qu'on me laisse piloter mes projets"
+    },
+    {
+      "icon": "📊",
+      "title": "Impact mesurable",
+      "description": "J'adore voir le fruit de mon travail : un contrat signé, un CA qui augmente"
+    },
+    {
+      "icon": "🤝",
+      "title": "Relation client forte",
+      "description": "Mon moteur, c'est la satisfaction client et les voir réussir"
+    },
+    {
+      "icon": "🚀",
+      "title": "Esprit d'équipe",
+      "description": "J'aime les équipes où on se soutient et célèbre les victoires ensemble"
+    }
+  ],
+  "values": [
+    {
+      "title": "Authenticité",
+      "description": "Je dis ce que je pense, je fais ce que je dis"
+    },
+    {
+      "title": "Résilience",
+      "description": "J'ai quitté mon pays, changé de carrière, rebondi plusieurs fois"
+    },
+    {
+      "title": "Curiosité",
+      "description": "J'apprends constamment (AI tools, CRM, certifications...)"
+    },
+    {
+      "title": "Impact",
+      "description": "Je ne veux pas juste \"faire mon job\", je veux créer de la valeur réelle"
+    }
+  ]
+}
