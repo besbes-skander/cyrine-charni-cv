@@ -12,7 +12,7 @@ export const siteConfig = {
     phoneRaw: '0744196909', // For tel: links
   },
   links: {
-    linkedin: 'https://linkedin.com/in/cyrine-charni',
+    linkedin: 'https://www.linkedin.com/in/cyrine-charni-bb0156156/',
     calendly: 'https://calendly.com/cyrine-charni',
   },
 } as const;
