@@ -6,8 +6,8 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   safelist: [
-    // Burgundy colors
-    'text-burgundy-50', 'text-burgundy-100', 'text-burgundy-200', 'text-burgundy-300', 'text-burgundy-400',
+    // Burgundy colors (including ultra-subtle 25)
+    'bg-burgundy-25', 'text-burgundy-50', 'text-burgundy-100', 'text-burgundy-200', 'text-burgundy-300', 'text-burgundy-400',
     'text-burgundy-500', 'text-burgundy-600', 'text-burgundy-700', 'text-burgundy-800', 'text-burgundy-900',
     'bg-burgundy-50', 'bg-burgundy-100', 'bg-burgundy-200', 'bg-burgundy-300', 'bg-burgundy-400',
     'bg-burgundy-500', 'bg-burgundy-600', 'bg-burgundy-700', 'bg-burgundy-800', 'bg-burgundy-900',
@@ -19,8 +19,8 @@ module.exports = {
     'border-burgundy-500', 'border-burgundy-600', 'border-burgundy-700', 'border-burgundy-800', 'border-burgundy-900',
     'hover:text-burgundy-800', 'hover:border-burgundy-800',
 
-    // Gold colors
-    'text-gold-50', 'text-gold-100', 'text-gold-200', 'text-gold-300', 'text-gold-400',
+    // Gold colors (including ultra-subtle 25)
+    'bg-gold-25', 'text-gold-50', 'text-gold-100', 'text-gold-200', 'text-gold-300', 'text-gold-400',
     'text-gold-500', 'text-gold-600', 'text-gold-700', 'text-gold-800', 'text-gold-900',
     'bg-gold-50', 'bg-gold-100', 'bg-gold-200', 'bg-gold-300', 'bg-gold-400',
     'bg-gold-500', 'bg-gold-600', 'bg-gold-700', 'bg-gold-800', 'bg-gold-900',
@@ -29,8 +29,8 @@ module.exports = {
     'to-gold-50', 'to-gold-100', 'to-gold-200', 'to-gold-300', 'to-gold-400',
     'to-gold-500', 'to-gold-600', 'to-gold-700', 'to-gold-800', 'to-gold-900',
 
-    // Olive colors
-    'text-olive-50', 'text-olive-100', 'text-olive-200', 'text-olive-300', 'text-olive-400',
+    // Olive colors (including ultra-subtle 25)
+    'bg-olive-25', 'text-olive-50', 'text-olive-100', 'text-olive-200', 'text-olive-300', 'text-olive-400',
     'text-olive-500', 'text-olive-600', 'text-olive-700', 'text-olive-800', 'text-olive-900',
     'bg-olive-50', 'bg-olive-100', 'bg-olive-200', 'bg-olive-300', 'bg-olive-400',
     'bg-olive-500', 'bg-olive-600', 'bg-olive-700', 'bg-olive-800', 'bg-olive-900',
@@ -60,6 +60,7 @@ module.exports = {
         },
         // Custom color palette: Burgundy Red (#9e1533)
         burgundy: {
+          25: '#fefbfc', // Ultra subtle wash
           50: '#fef2f4',
           100: '#fde6e9',
           200: '#fccdd6',
@@ -73,6 +74,7 @@ module.exports = {
         },
         // Custom color palette: Gold (#dc8f09)
         gold: {
+          25: '#fffef8', // Ultra subtle wash
           50: '#fef9e7',
           100: '#fdf3c7',
           200: '#fbe68a',
@@ -86,6 +88,7 @@ module.exports = {
         },
         // Custom color palette: Olive Green (#708246)
         olive: {
+          25: '#fcfdfb', // Ultra subtle wash
           50: '#f6f8f3',
           100: '#eaefe2',
           200: '#d5dfc5',

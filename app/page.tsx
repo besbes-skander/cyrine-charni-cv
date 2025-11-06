@@ -69,7 +69,7 @@ export default function Home() {
   const typedFooterData = footerData as FooterData;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 overflow-x-hidden">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <Navigation
         items={typedNavigationData.items}
         isScrolled={isScrolled}

@@ -44,14 +44,14 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
   };
 
   return (
-    <section id="a-propos" className="py-20 px-6 bg-white">
+    <section id="a-propos" className="py-20 px-6 bg-burgundy-25">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
           🌟 Qui suis-je au-delà du CV ?
         </h2>
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-gradient-to-br from-olive-50 to-gold-50 p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">{journey.title}</h3>
+          <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
+            <h3 className="text-2xl font-bold mb-4 text-burgundy-800">{journey.title}</h3>
             <p className="text-gray-700 leading-relaxed">
               {renderJourneyContent(journey.content, journey.highlights)}
             </p>
@@ -65,8 +65,8 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
         </div>
 
         {/* Valeurs */}
-        <div className="bg-gradient-to-r from-olive-600 to-gold-600 p-8 rounded-2xl text-white">
-          <h3 className="text-2xl font-bold mb-6 text-center">🎯 Mes valeurs professionnelles</h3>
+        <div className="bg-white p-8 rounded-xl border border-burgundy-100 shadow-sm">
+          <h3 className="text-2xl font-bold mb-6 text-center text-burgundy-800">🎯 Mes valeurs professionnelles</h3>
           <div className="grid md:grid-cols-4 gap-6">
             {values.map((val, idx) => (
               <ValueCard key={idx} {...val} />

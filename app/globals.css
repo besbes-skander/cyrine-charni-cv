@@ -8,13 +8,35 @@
   }
 
   body {
-    @apply bg-gradient-to-br from-gray-50 via-blue-50 to-gray-50;
+    @apply bg-white;
     overflow-x: hidden;
+  }
+
+  /* Smooth animations globally */
+  * {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+
+  /* Smooth hover transitions for interactive elements */
+  button, a, [role="button"] {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
   }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Smooth transition utilities */
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .transition-smooth-slow {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
