@@ -117,7 +117,7 @@ export default function Home() {
         contactData={typedContactData}
       />
 
-      <Footer text={typedFooterData.text} lastUpdate={typedFooterData.lastUpdate} />
+      <Footer text={typedFooterData.text} />
     </div>
   );
 }
