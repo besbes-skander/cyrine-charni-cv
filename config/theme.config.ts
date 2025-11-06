@@ -7,10 +7,10 @@
 
 export const themeConfig = {
   brand: {
-    // Primary brand color (default: pink)
+    // Primary brand color (burgundy red)
     primary: {
-      color: 'pink',
-      shade: '500',
+      color: 'red',
+      shade: '700',
     },
 
     // Secondary brand color (default: purple)
@@ -22,8 +22,8 @@ export const themeConfig = {
     // Brand gradient (used in hero, navigation, buttons)
     gradient: {
       from: {
-        color: 'pink',
-        shade: '500',
+        color: 'red',
+        shade: '700',
       },
       to: {
         color: 'purple',
@@ -34,8 +34,8 @@ export const themeConfig = {
     // Lighter gradient variant (used in some cards)
     gradientLight: {
       from: {
-        color: 'pink',
-        shade: '400',
+        color: 'red',
+        shade: '600',
       },
       to: {
         color: 'purple',
