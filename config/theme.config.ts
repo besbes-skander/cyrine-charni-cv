@@ -7,26 +7,27 @@
 
 export const themeConfig = {
   brand: {
-    // Primary brand color (burgundy red)
+    // Primary brand color (custom burgundy: #9e1533)
     primary: {
-      color: 'red',
-      shade: '700',
+      color: 'burgundy',
+      shade: '800',
     },
 
-    // Secondary brand color (default: purple)
+    // Secondary brand color (custom gold: #dc8f09)
     secondary: {
-      color: 'purple',
+      color: 'gold',
       shade: '600',
     },
 
     // Brand gradient (used in hero, navigation, buttons)
+    // Burgundy to Gold gradient
     gradient: {
       from: {
-        color: 'red',
-        shade: '700',
+        color: 'burgundy',
+        shade: '800',
       },
       to: {
-        color: 'purple',
+        color: 'gold',
         shade: '600',
       },
     },
@@ -34,11 +35,11 @@ export const themeConfig = {
     // Lighter gradient variant (used in some cards)
     gradientLight: {
       from: {
-        color: 'red',
-        shade: '600',
+        color: 'burgundy',
+        shade: '700',
       },
       to: {
-        color: 'purple',
+        color: 'gold',
         shade: '500',
       },
     },
