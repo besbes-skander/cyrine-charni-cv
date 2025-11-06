@@ -1,6 +1,7 @@
 'use client';
 
 import { Mail, Linkedin, Phone, MapPin, Calendar } from 'lucide-react';
+import Image from 'next/image';
 import { PersonalInfo, HeroStat } from '@/types';
 import { SiteConfig } from '@/config/site.config';
 import StatCard from '../ui/StatCard';
@@ -67,8 +68,14 @@ export default function HeroSection({ personalInfo, siteConfig, stats, onNavigat
             </div>
           </div>
           <div className="relative">
-            <div className="w-full h-96 bg-gradient-to-br from-pink-400 to-purple-500 rounded-2xl flex items-center justify-center text-white text-6xl shadow-2xl">
-              👩‍💼
+            <div className="relative w-full h-96 bg-gradient-to-br from-pink-400 to-purple-500 rounded-2xl overflow-hidden shadow-2xl">
+              <Image
+                src="/profile.jpg"
+                alt={personalInfo.name}
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
             {/* Stats floating cards */}
             {stats.map((stat, idx) => (
