@@ -21,7 +21,6 @@ import { siteConfig } from '@/config/site.config';
 // Data Imports
 import personalInfo from '@/data/personal-info.json';
 import navigationData from '@/data/navigation.json';
-import heroStatsData from '@/data/hero-stats.json';
 import aboutData from '@/data/about.json';
 import skillsData from '@/data/skills.json';
 import caseStudiesData from '@/data/case-studies.json';
@@ -34,7 +33,6 @@ import footerData from '@/data/footer.json';
 import {
   PersonalInfo,
   NavigationData,
-  HeroStatsData,
   AboutData,
   SkillsData,
   CaseStudiesData,
@@ -62,7 +60,6 @@ export default function Home() {
   // Type assertions for JSON imports
   const typedPersonalInfo = personalInfo as PersonalInfo;
   const typedNavigationData = navigationData as NavigationData;
-  const typedHeroStatsData = heroStatsData as HeroStatsData;
   const typedAboutData = aboutData as AboutData;
   const typedSkillsData = skillsData as SkillsData;
   const typedCaseStudiesData = caseStudiesData as CaseStudiesData;
@@ -83,7 +80,6 @@ export default function Home() {
       <HeroSection
         personalInfo={typedPersonalInfo}
         siteConfig={siteConfig}
-        stats={typedHeroStatsData.stats}
         onNavigate={scrollToSection}
       />
 

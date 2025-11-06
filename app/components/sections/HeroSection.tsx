@@ -2,9 +2,8 @@
 
 import { Mail, Linkedin, Phone, MapPin, Calendar } from 'lucide-react';
 import Image from 'next/image';
-import { PersonalInfo, HeroStat } from '@/types';
+import { PersonalInfo } from '@/types';
 import { SiteConfig } from '@/config/site.config';
-import StatCard from '../ui/StatCard';
 import {
   getTextGradient,
   getBrandGradient,
@@ -18,11 +17,10 @@ import {
 interface HeroSectionProps {
   personalInfo: PersonalInfo;
   siteConfig: SiteConfig;
-  stats: HeroStat[];
   onNavigate: (id: string) => void;
 }
 
-export default function HeroSection({ personalInfo, siteConfig, stats, onNavigate }: HeroSectionProps) {
+export default function HeroSection({ personalInfo, siteConfig, onNavigate }: HeroSectionProps) {
   return (
     <section id="hero" className="pt-32 pb-20 px-6">
       <div className="max-w-6xl mx-auto">
@@ -86,10 +84,6 @@ export default function HeroSection({ personalInfo, siteConfig, stats, onNavigat
                 priority
               />
             </div>
-            {/* Stats floating cards */}
-            {stats.map((stat, idx) => (
-              <StatCard key={idx} {...stat} />
-            ))}
           </div>
         </div>
       </div>
