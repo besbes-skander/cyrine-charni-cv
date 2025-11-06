@@ -2,6 +2,7 @@
 
 import { JobSearchData } from '@/types';
 import JobCriteriaCard from '../ui/JobCriteriaCard';
+import { getBrandGradient } from '@/utils/themeHelpers';
 
 interface JobSearchSectionProps {
   title: JobSearchData['title'];
@@ -11,7 +12,7 @@ interface JobSearchSectionProps {
 
 export default function JobSearchSection({ title, criteria, summary }: JobSearchSectionProps) {
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-pink-500 to-purple-600 text-white">
+    <section className={`py-20 px-6 ${getBrandGradient('br')} text-white`}>
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8">{title}</h2>
         <div className="grid md:grid-cols-2 gap-6 mb-8">

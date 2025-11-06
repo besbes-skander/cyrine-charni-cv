@@ -4,6 +4,7 @@ import { Mail, Linkedin, Phone, Calendar } from 'lucide-react';
 import { ContactData } from '@/types';
 import { SiteConfig } from '@/config/site.config';
 import ContactButton from '../ui/ContactButton';
+import { getPrimaryHoverTextColor, getPrimaryTextColor } from '@/utils/themeHelpers';
 
 interface ContactSectionProps {
   siteConfig: SiteConfig;
@@ -44,14 +45,14 @@ export default function ContactSection({ siteConfig, contactData }: ContactSecti
             href={siteConfig.links.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-gray-700 hover:text-pink-500 transition-colors"
+            className={`flex items-center gap-2 text-gray-700 ${getPrimaryHoverTextColor()} transition-colors`}
           >
             <Linkedin size={24} />
             <span className="font-semibold">LinkedIn</span>
           </a>
           <a
             href={`tel:${siteConfig.contact.phoneRaw}`}
-            className="flex items-center gap-2 text-gray-700 hover:text-pink-500 transition-colors"
+            className={`flex items-center gap-2 text-gray-700 ${getPrimaryHoverTextColor()} transition-colors`}
           >
             <Phone size={24} />
             <span className="font-semibold">{siteConfig.contact.phone}</span>
@@ -63,7 +64,7 @@ export default function ContactSection({ siteConfig, contactData }: ContactSecti
           <div className="grid md:grid-cols-2 gap-4 text-left">
             {contactData.availability.map((item, idx) => (
               <div key={idx} className="flex items-center gap-2">
-                <span className="text-pink-500">✓</span>
+                <span className={getPrimaryTextColor()}>✓</span>
                 <span className="text-gray-700">{item}</span>
               </div>
             ))}

@@ -34,8 +34,10 @@ The portfolio is built with a **modular component architecture** using TypeScrip
   - `layout/` - Navigation and Footer components
 - `app/types/index.ts` - TypeScript interfaces for all data structures
 - `app/utils/iconMap.tsx` - Icon mapping utility for Lucide icons
+- `app/utils/themeHelpers.ts` - Theme helper functions for dynamic color generation
 - `data/` - 10 JSON files containing all portfolio content
-- `config/site.config.ts` - **Centralized configuration file** (see Configuration section below)
+- `config/site.config.ts` - **Centralized site configuration** (contact info, links)
+- `config/theme.config.ts` - **Centralized theme configuration** (brand colors)
 
 ### Key Architectural Decisions
 
@@ -56,9 +58,9 @@ The portfolio is built with a **modular component architecture** using TypeScrip
 ### Styling Architecture
 
 - **Tailwind CSS**: All styling uses utility classes
-- **Custom Color Palette**: Primary pink/purple gradient defined in tailwind.config.js:10-22
+- **Centralized Theme System**: Brand colors managed via `config/theme.config.ts` with helper functions in `app/utils/themeHelpers.ts`
 - **Global Styles**: Minimal global CSS in app/globals.css (scroll behavior and background gradient)
-- **Gradient Patterns**: Heavy use of gradient backgrounds (`from-pink-500 to-purple-600`, `from-gray-50 to-gray-100`)
+- **Gradient Patterns**: Heavy use of gradient backgrounds generated dynamically from theme config
 
 ### Icons
 Uses `lucide-react` package for all icons, with a centralized icon mapping utility in `app/utils/iconMap.tsx`
@@ -86,6 +88,67 @@ export const siteConfig = {
 1. Edit `config/site.config.ts`
 2. No rebuild needed - just refresh the browser in dev mode
 3. For production, run `npm run build`
+
+### Theme Configuration (`config/theme.config.ts`)
+**This is the main file to edit for changing the site's color scheme:**
+
+The site uses a centralized theme system that makes it easy to change all brand colors from a single location. All color values are managed through `config/theme.config.ts` and applied via helper functions in `app/utils/themeHelpers.ts`.
+
+```typescript
+export const themeConfig = {
+  brand: {
+    // Primary brand color (default: pink-500)
+    primary: {
+      color: 'pink',
+      shade: '500',
+    },
+    // Secondary brand color (default: purple-600)
+    secondary: {
+      color: 'purple',
+      shade: '600',
+    },
+    // Brand gradient (used in hero, navigation, buttons)
+    gradient: {
+      from: { color: 'pink', shade: '500' },
+      to: { color: 'purple', shade: '600' },
+    },
+    // Lighter gradient variant (used in some cards)
+    gradientLight: {
+      from: { color: 'pink', shade: '400' },
+      to: { color: 'purple', shade: '500' },
+    },
+  },
+}
+```
+
+**To change the site's color scheme:**
+1. Edit `config/theme.config.ts` - change the `color` and `shade` values
+2. Example: To switch to blue/teal theme:
+   ```typescript
+   primary: { color: 'blue', shade: '500' },
+   secondary: { color: 'teal', shade: '600' },
+   gradient: {
+     from: { color: 'blue', shade: '500' },
+     to: { color: 'teal', shade: '600' },
+   }
+   ```
+3. The changes will apply across the entire site automatically
+4. For production, run `npm run build`
+
+**Where colors are used:**
+- **Navigation**: Logo gradient, hover states
+- **Hero Section**: Title gradient, badge, icons, buttons, profile image background
+- **Job Search Section**: Full section background gradient
+- **Contact Section**: Button backgrounds, link hover states, checkmarks
+- **UI Components**: ContactButton variants
+
+**Helper Functions** (`app/utils/themeHelpers.ts`):
+- `getPrimaryColor()` - Returns primary color class (e.g., 'pink-500')
+- `getBrandGradient(direction, variant)` - Generates gradient classes
+- `getTextGradient()` - Gradient text effect
+- `getPrimaryTextColor()` - Primary color for text
+- `getPrimaryHoverTextColor()` - Hover state for text
+- And more...
 
 ## Content Customization
 
