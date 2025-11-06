@@ -108,3 +108,43 @@ export const getPrimaryDarkTextColor = (): string => {
 export const getPrimaryHoverBorderColor = (): string => {
   return `hover:border-${getPrimaryColor()}`;
 };
+
+/**
+ * Get the accent color class
+ * @example getAccentColor() // Returns: 'olive-600'
+ */
+export const getAccentColor = (): string => {
+  const { color, shade } = themeConfig.brand.accent;
+  return `${color}-${shade}`;
+};
+
+/**
+ * Get accent color text class
+ * @example getAccentTextColor() // Returns: 'text-olive-600'
+ */
+export const getAccentTextColor = (): string => {
+  return `text-${getAccentColor()}`;
+};
+
+/**
+ * Get the brand gradient for buttons and accents (more vibrant)
+ * @param direction - Gradient direction (default: 'r' for right)
+ * @example getAccentGradient() // Returns: 'bg-gradient-to-r from-gold-500 to-olive-500'
+ */
+export const getAccentGradient = (
+  direction: 'r' | 'l' | 'b' | 't' | 'br' | 'bl' | 'tr' | 'tl' = 'r'
+): string => {
+  const gradient = themeConfig.brand.gradientAccent;
+  const fromColor = `${gradient.from.color}-${gradient.from.shade}`;
+  const toColor = `${gradient.to.color}-${gradient.to.shade}`;
+
+  return `bg-gradient-to-${direction} from-${fromColor} to-${toColor}`;
+};
+
+/**
+ * Get text gradient for accent elements
+ * @example getAccentTextGradient() // Returns: 'bg-gradient-to-r from-gold-500 to-olive-500 bg-clip-text text-transparent'
+ */
+export const getAccentTextGradient = (): string => {
+  return `${getAccentGradient()} bg-clip-text text-transparent`;
+};

@@ -13,6 +13,7 @@ import {
   getPrimaryLightBg,
   getPrimaryDarkTextColor,
   getPrimaryHoverBorderColor,
+  getAccentGradient,
 } from '@/utils/themeHelpers';
 
 interface HeroSectionProps {
@@ -62,14 +63,14 @@ export default function HeroSection({ personalInfo, siteConfig, stats, onNavigat
                 href={siteConfig.links.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`px-6 py-3 ${getBrandGradient()} text-white rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all flex items-center gap-2`}
+                className={`px-6 py-3 ${getAccentGradient()} text-white rounded-lg font-semibold hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 flex items-center gap-2`}
               >
                 <Linkedin size={20} />
                 LinkedIn
               </a>
               <button
                 onClick={() => onNavigate('contact')}
-                className={`px-6 py-3 bg-white text-gray-900 rounded-lg font-semibold border-2 border-gray-300 ${getPrimaryHoverBorderColor()} hover:shadow-lg transform hover:-translate-y-1 transition-all flex items-center gap-2`}
+                className={`px-6 py-3 bg-white text-gray-900 rounded-lg font-semibold border-2 border-gray-300 ${getPrimaryHoverBorderColor()} hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 flex items-center gap-2`}
               >
                 <Calendar size={20} />
                 Prendre RDV
@@ -86,10 +87,7 @@ export default function HeroSection({ personalInfo, siteConfig, stats, onNavigat
                 priority
               />
             </div>
-            {/* Stats floating cards */}
-            {stats.map((stat, idx) => (
-              <StatCard key={idx} {...stat} />
-            ))}
+            {/* Stats removed for cleaner, minimalist design */}
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import './globals.css';
 import { Metadata } from 'next';
+import { LanguageProvider } from './contexts/LanguageContext';
 
 export const metadata: Metadata = {
   title: 'Cyrine Charni - Customer Success & Business Development',
@@ -21,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="fr" className="scroll-smooth">
       <body className="antialiased">
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

@@ -19,27 +19,46 @@ export const themeConfig = {
       shade: '600',
     },
 
-    // Brand gradient (used in hero, navigation, buttons)
-    // Olive to Gold gradient
+    // Accent color (olive green)
+    accent: {
+      color: 'olive',
+      shade: '600',
+    },
+
+    // Subtle gradient - cream to light gold (for backgrounds and soft accents)
+    // Much softer than before for a minimalist look
     gradient: {
       from: {
-        color: 'olive',
-        shade: '600',
+        color: 'gold',
+        shade: '50',
       },
       to: {
-        color: 'gold',
-        shade: '600',
+        color: 'olive',
+        shade: '100',
       },
     },
 
-    // Lighter gradient variant (used in some cards)
+    // Lighter gradient variant (barely visible, for subtle effects)
     gradientLight: {
       from: {
-        color: 'olive',
-        shade: '500',
+        color: 'gold',
+        shade: '50',
       },
       to: {
         color: 'gold',
+        shade: '100',
+      },
+    },
+
+    // Accent gradient for buttons and important elements
+    // Gold to olive - warm and earthy
+    gradientAccent: {
+      from: {
+        color: 'gold',
+        shade: '500',
+      },
+      to: {
+        color: 'olive',
         shade: '500',
       },
     },

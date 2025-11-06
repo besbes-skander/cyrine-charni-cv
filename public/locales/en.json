@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Available for new opportunities",
+    "headline": "👋 Welcome to my portfolio",
+    "title": "Business Development & Project Management",
+    "subtitle": "Hybrid Profile: Sales & Marketing & Project Management",
+    "experience": "+5 years of experience",
+    "location": "Paris",
+    "linkedin": "LinkedIn",
+    "schedule": "Schedule a Meeting"
+  },
+  "about": {
+    "title": "My Journey",
+    "journeyTitle": "Journey",
+    "motivationsTitle": "Motivations",
+    "valuesTitle": "My Values"
+  },
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "Expertise developed through +5 years of experience",
+    "coreSkills": "Core Skills",
+    "toolStack": "Tech Stack"
+  },
+  "caseStudies": {
+    "title": "My Achievements",
+    "subtitle": "Some projects that have marked my journey",
+    "context": "Context",
+    "actions": "Actions Taken",
+    "results": "Results"
+  },
+  "jobSearch": {
+    "title": "What I'm Looking For",
+    "subtitle": "My criteria for my next challenge"
+  },
+  "hobbies": {
+    "title": "Outside of Work",
+    "subtitle": "My interests that fuel my creativity"
+  },
+  "contact": {
+    "title": "Want to Connect?",
+    "subtitle": "I'm open to new opportunities",
+    "description": "Feel free to reach out to discuss your projects or simply to chat over a coffee ☕",
+    "scheduleCall": "Schedule a Call",
+    "visitLinkedIn": "Visit my LinkedIn",
+    "emailMe": "Email Me",
+    "available": "Available within 24h",
+    "responseTime": "Response time: 24h",
+    "openToOpportunities": "Open to opportunities"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "madeWith": "Made with",
+    "by": "by"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "close": "Close",
+    "readMore": "Read more",
+    "loading": "Loading..."
+  }
+}

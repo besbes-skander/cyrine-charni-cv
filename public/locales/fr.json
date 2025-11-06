@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Réalisations",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Disponible pour de nouvelles opportunités",
+    "headline": "👋 Bienvenue sur mon portfolio",
+    "title": "Business Development & Project management",
+    "subtitle": "Profil hybride : Sales & Marketing & Gestion de Projet",
+    "experience": "+5 ans d'expérience",
+    "location": "Paris",
+    "linkedin": "LinkedIn",
+    "schedule": "Prendre RDV"
+  },
+  "about": {
+    "title": "Mon Parcours",
+    "journeyTitle": "Parcours",
+    "motivationsTitle": "Motivations",
+    "valuesTitle": "Mes Valeurs"
+  },
+  "skills": {
+    "title": "Mes Compétences",
+    "subtitle": "Expertise développée à travers +5 ans d'expérience",
+    "coreSkills": "Compétences Clés",
+    "toolStack": "Stack Technique"
+  },
+  "caseStudies": {
+    "title": "Mes Réalisations",
+    "subtitle": "Quelques projets qui ont marqué mon parcours",
+    "context": "Contexte",
+    "actions": "Actions Menées",
+    "results": "Résultats"
+  },
+  "jobSearch": {
+    "title": "Ce que je recherche",
+    "subtitle": "Mes critères pour mon prochain challenge"
+  },
+  "hobbies": {
+    "title": "En dehors du travail",
+    "subtitle": "Mes centres d'intérêt qui nourrissent ma créativité"
+  },
+  "contact": {
+    "title": "Envie d'échanger ?",
+    "subtitle": "Je suis à l'écoute de nouvelles opportunités",
+    "description": "N'hésitez pas à me contacter pour discuter de vos projets ou simplement échanger autour d'un café ☕",
+    "scheduleCall": "Prendre RDV",
+    "visitLinkedIn": "Visiter mon LinkedIn",
+    "emailMe": "M'écrire un email",
+    "available": "Disponible sous 24h",
+    "responseTime": "Temps de réponse : 24h",
+    "openToOpportunities": "Ouvert aux opportunités"
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "madeWith": "Fait avec",
+    "by": "par"
+  },
+  "common": {
+    "learnMore": "En savoir plus",
+    "close": "Fermer",
+    "readMore": "Lire plus",
+    "loading": "Chargement..."
+  }
+}

@@ -3,6 +3,7 @@
 import { AboutData } from '@/types';
 import MotivationCard from '../ui/MotivationCard';
 import ValueCard from '../ui/ValueCard';
+import { getAccentGradient } from '@/utils/themeHelpers';
 
 interface AboutSectionProps {
   journey: AboutData['journey'];
@@ -65,7 +66,7 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
         </div>
 
         {/* Valeurs */}
-        <div className="bg-gradient-to-r from-olive-600 to-gold-600 p-8 rounded-2xl text-white">
+        <div className={`${getAccentGradient()} p-8 rounded-2xl text-white shadow-lg`}>
           <h3 className="text-2xl font-bold mb-6 text-center">🎯 Mes valeurs professionnelles</h3>
           <div className="grid md:grid-cols-4 gap-6">
             {values.map((val, idx) => (
