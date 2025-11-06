@@ -46,18 +46,18 @@ module.exports = {
           800: '#945e0c',
           900: '#7a4e10',
         },
-        // Custom color palette: Taupe (#695f44)
-        taupe: {
-          50: '#f7f6f4',
-          100: '#edebe6',
-          200: '#ddd9cd',
-          300: '#c7c0ad',
-          400: '#b0a68b',
-          500: '#9e9273',
-          600: '#918567',
-          700: '#7a7156',
-          800: '#695f44', // Main taupe color
-          900: '#584f3a',
+        // Custom color palette: Olive Green (#708246)
+        olive: {
+          50: '#f6f8f3',
+          100: '#eaefe2',
+          200: '#d5dfc5',
+          300: '#b8c89e',
+          400: '#9bae77',
+          500: '#849958',
+          600: '#708246', // Main olive color
+          700: '#5a6838',
+          800: '#4a5530',
+          900: '#3e472a',
         },
       }
     },

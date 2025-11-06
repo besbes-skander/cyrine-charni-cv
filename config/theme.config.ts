@@ -20,11 +20,11 @@ export const themeConfig = {
     },
 
     // Brand gradient (used in hero, navigation, buttons)
-    // Burgundy to Gold gradient
+    // Olive to Gold gradient
     gradient: {
       from: {
-        color: 'burgundy',
-        shade: '800',
+        color: 'olive',
+        shade: '600',
       },
       to: {
         color: 'gold',
@@ -35,8 +35,8 @@ export const themeConfig = {
     // Lighter gradient variant (used in some cards)
     gradientLight: {
       from: {
-        color: 'burgundy',
-        shade: '700',
+        color: 'olive',
+        shade: '500',
       },
       to: {
         color: 'gold',
