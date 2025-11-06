@@ -1,15 +1,16 @@
 'use client';
 
 import { Mail, Linkedin, Phone, Calendar } from 'lucide-react';
-import { PersonalInfo, ContactData } from '@/types';
+import { ContactData } from '@/types';
+import { SiteConfig } from '@/config/site.config';
 import ContactButton from '../ui/ContactButton';
 
 interface ContactSectionProps {
-  personalInfo: PersonalInfo;
+  siteConfig: SiteConfig;
   contactData: ContactData;
 }
 
-export default function ContactSection({ personalInfo, contactData }: ContactSectionProps) {
+export default function ContactSection({ siteConfig, contactData }: ContactSectionProps) {
   return (
     <section id="contact" className="py-20 px-6 bg-white">
       <div className="max-w-4xl mx-auto text-center">
@@ -22,14 +23,14 @@ export default function ContactSection({ personalInfo, contactData }: ContactSec
 
         <div className="grid md:grid-cols-2 gap-6 mb-12">
           <ContactButton
-            href={`mailto:${personalInfo.email}`}
+            href={`mailto:${siteConfig.contact.email}`}
             icon={<Mail size={24} />}
             variant="primary"
           >
             M'envoyer un email
           </ContactButton>
           <ContactButton
-            href={personalInfo.calendly}
+            href={siteConfig.links.calendly}
             icon={<Calendar size={24} />}
             variant="secondary"
             external
@@ -40,7 +41,7 @@ export default function ContactSection({ personalInfo, contactData }: ContactSec
 
         <div className="flex justify-center gap-6 mb-12">
           <a
-            href={personalInfo.linkedin}
+            href={siteConfig.links.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-gray-700 hover:text-pink-500 transition-colors"
@@ -49,11 +50,11 @@ export default function ContactSection({ personalInfo, contactData }: ContactSec
             <span className="font-semibold">LinkedIn</span>
           </a>
           <a
-            href={`tel:${personalInfo.phone.replace(/\s/g, '')}`}
+            href={`tel:${siteConfig.contact.phoneRaw}`}
             className="flex items-center gap-2 text-gray-700 hover:text-pink-500 transition-colors"
           >
             <Phone size={24} />
-            <span className="font-semibold">{personalInfo.phone}</span>
+            <span className="font-semibold">{siteConfig.contact.phone}</span>
           </a>
         </div>
 

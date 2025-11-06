@@ -20,7 +20,8 @@
       "@/components/*": ["./app/components/*"],
       "@/types": ["./app/types/index.ts"],
       "@/data/*": ["./data/*"],
-      "@/utils/*": ["./app/utils/*"]
+      "@/utils/*": ["./app/utils/*"],
+      "@/config/*": ["./config/*"]
     },
     "plugins": [
       {

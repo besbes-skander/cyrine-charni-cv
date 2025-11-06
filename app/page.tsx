@@ -15,6 +15,9 @@ import JobSearchSection from './components/sections/JobSearchSection';
 import HobbiesSection from './components/sections/HobbiesSection';
 import ContactSection from './components/sections/ContactSection';
 
+// Configuration
+import { siteConfig } from '@/config/site.config';
+
 // Data Imports
 import personalInfo from '@/data/personal-info.json';
 import navigationData from '@/data/navigation.json';
@@ -79,6 +82,7 @@ export default function Home() {
 
       <HeroSection
         personalInfo={typedPersonalInfo}
+        siteConfig={siteConfig}
         stats={typedHeroStatsData.stats}
         onNavigate={scrollToSection}
       />
@@ -109,7 +113,7 @@ export default function Home() {
       />
 
       <ContactSection
-        personalInfo={typedPersonalInfo}
+        siteConfig={siteConfig}
         contactData={typedContactData}
       />
 

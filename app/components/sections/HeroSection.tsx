@@ -2,15 +2,17 @@
 
 import { Mail, Linkedin, Phone, MapPin, Calendar } from 'lucide-react';
 import { PersonalInfo, HeroStat } from '@/types';
+import { SiteConfig } from '@/config/site.config';
 import StatCard from '../ui/StatCard';
 
 interface HeroSectionProps {
   personalInfo: PersonalInfo;
+  siteConfig: SiteConfig;
   stats: HeroStat[];
   onNavigate: (id: string) => void;
 }
 
-export default function HeroSection({ personalInfo, stats, onNavigate }: HeroSectionProps) {
+export default function HeroSection({ personalInfo, siteConfig, stats, onNavigate }: HeroSectionProps) {
   return (
     <section id="hero" className="pt-32 pb-20 px-6">
       <div className="max-w-6xl mx-auto">
@@ -36,18 +38,18 @@ export default function HeroSection({ personalInfo, stats, onNavigate }: HeroSec
               </div>
               <div className="flex items-center gap-2 text-gray-700">
                 <Mail size={20} className="text-pink-500" />
-                <a href={`mailto:${personalInfo.email}`} className="hover:text-pink-500">
-                  {personalInfo.email}
+                <a href={`mailto:${siteConfig.contact.email}`} className="hover:text-pink-500">
+                  {siteConfig.contact.email}
                 </a>
               </div>
               <div className="flex items-center gap-2 text-gray-700">
                 <Phone size={20} className="text-pink-500" />
-                <span>{personalInfo.phone}</span>
+                <span>{siteConfig.contact.phone}</span>
               </div>
             </div>
             <div className="flex gap-4">
               <a
-                href={personalInfo.linkedin}
+                href={siteConfig.links.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all flex items-center gap-2"

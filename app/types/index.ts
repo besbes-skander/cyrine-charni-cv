@@ -1,4 +1,5 @@
 // Personal Information
+// Note: Contact info (email, phone, linkedin, calendly) is now in config/site.config.ts
 export interface PersonalInfo {
   name: string;
   title: string;
@@ -7,10 +8,6 @@ export interface PersonalInfo {
   subtitle: string;
   experience: string;
   location: string;
-  email: string;
-  phone: string;
-  linkedin: string;
-  calendly: string;
   age: number;
   nationality: string;
   yearsInParis: number;
