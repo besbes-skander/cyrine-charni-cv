@@ -10,8 +10,8 @@ interface StatCardProps {
 }
 
 const colorClasses: Record<ColorVariant, string> = {
-  pink: 'text-pink-500',
-  purple: 'text-purple-500',
+  pink: 'text-burgundy-800',
+  purple: 'text-gold-600',
   blue: 'text-blue-500',
   green: 'text-green-500',
   yellow: 'text-yellow-500',
