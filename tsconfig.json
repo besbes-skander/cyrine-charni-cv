@@ -18,6 +18,7 @@
       "@/*": ["./*"],
       "@/app/*": ["./app/*"],
       "@/components/*": ["./app/components/*"],
+      "@/contexts/*": ["./app/contexts/*"],
       "@/types": ["./app/types/index.ts"],
       "@/data/*": ["./data/*"],
       "@/utils/*": ["./app/utils/*"],
