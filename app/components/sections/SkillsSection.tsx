@@ -11,8 +11,8 @@ interface SkillsSectionProps {
 
 export default function SkillsSection({ coreSkills, toolStack }: SkillsSectionProps) {
   return (
-    <section id="competences" className="py-24 px-6 bg-white">
-      <div className="max-w-5xl mx-auto">
+    <div className="py-24 px-6 bg-white min-h-screen flex items-center">
+      <div className="max-w-5xl mx-auto w-full">
         <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-800 mb-16 text-center">
           Mes compétences & outils
         </h2>
@@ -39,6 +39,6 @@ export default function SkillsSection({ coreSkills, toolStack }: SkillsSectionPr
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

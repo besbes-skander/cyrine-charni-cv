@@ -19,8 +19,8 @@ interface HeroSectionProps {
 
 export default function HeroSection({ personalInfo, siteConfig, onNavigate }: HeroSectionProps) {
   return (
-    <section id="hero" className="pt-32 pb-20 px-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="pt-32 pb-20 px-6 min-h-screen flex items-center">
+      <div className="max-w-4xl mx-auto w-full">
         {/* Name and Photo - Asymmetric layout */}
         <div className="flex items-center gap-6 mb-8">
           <div className="relative w-32 h-32 md:w-40 md:h-40 flex-shrink-0">
@@ -116,6 +116,6 @@ export default function HeroSection({ personalInfo, siteConfig, onNavigate }: He
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

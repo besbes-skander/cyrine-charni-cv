@@ -4,13 +4,31 @@
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   body {
     @apply bg-gradient-to-br from-gray-50 via-blue-50 to-gray-50;
     overflow-x: hidden;
   }
+}
+
+/* Full-page scroll snap styles */
+.fullpage-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.fullpage-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100vh;
+  position: relative;
 }
 
 @layer utilities {
