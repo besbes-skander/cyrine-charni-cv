@@ -5,47 +5,78 @@
  * Edit these values to quickly change the site's color scheme.
  */
 
+/**
+ * Clean & Punchy Color Palette
+ *
+ * Primary: Rouge vif #D63031 - CTAs principaux, chiffres clés
+ * Secondary: Bleu électrique #0984E3 - CTAs secondaires, accents
+ * Text: Gris anthracite #2D3436 - Textes principaux
+ * TextSecondary: Gris moyen #636E72 - Textes secondaires
+ * Accent: Vert succès #00B894 - Métriques positives (92%)
+ * Background: Blanc #FFFFFF - Fond principal
+ * BackgroundAlt: Gris clair #F5F6FA - Sections alternées
+ */
 export const themeConfig = {
   brand: {
-    // Primary brand color (custom olive: #708246)
+    // Primary brand color: Rouge vif
     primary: {
-      color: 'olive',
+      color: 'brand-red',
       shade: '600',
     },
 
-    // Accent color 1: Burgundy for important CTAs (custom burgundy: #9e1533)
-    accent1: {
-      color: 'burgundy',
-      shade: '800',
+    // Secondary brand color: Bleu électrique
+    secondary: {
+      color: 'brand-blue',
+      shade: '500',
     },
 
-    // Accent color 2: Royal Blue for secondary actions
-    accent2: {
-      color: 'blue',
-      shade: '600',
+    // Success color: Vert
+    success: {
+      color: 'brand-green',
+      shade: '500',
     },
 
-    // Brand gradient (used in hero, navigation)
-    // Olive gradient
+    // Text colors
+    text: {
+      primary: {
+        color: 'brand-gray',
+        shade: '800',
+      },
+      secondary: {
+        color: 'brand-gray',
+        shade: '600',
+      },
+    },
+
+    // Background colors
+    background: {
+      primary: '#FFFFFF',
+      secondary: {
+        color: 'brand-gray',
+        shade: '50',
+      },
+    },
+
+    // Brand gradient (used in some sections)
     gradient: {
       from: {
-        color: 'olive',
+        color: 'brand-red',
         shade: '600',
       },
       to: {
-        color: 'olive',
+        color: 'brand-red',
         shade: '700',
       },
     },
 
-    // Lighter gradient variant (used in some cards)
+    // Lighter gradient variant
     gradientLight: {
       from: {
-        color: 'olive',
+        color: 'brand-red',
         shade: '400',
       },
       to: {
-        color: 'olive',
+        color: 'brand-red',
         shade: '600',
       },
     },

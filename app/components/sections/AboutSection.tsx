@@ -23,9 +23,9 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
           splitParts.forEach((splitPart, idx) => {
             newParts.push(splitPart);
             if (idx < splitParts.length - 1) {
-              const colorClass = highlight.color === 'pink' ? 'text-burgundy-800' :
+              const colorClass = highlight.color === 'pink' ? 'text-brand-red-600' :
                 highlight.color === 'purple' ? 'text-purple-600' :
-                  highlight.color === 'blue' ? 'text-blue-600' : 'text-gray-900';
+                  highlight.color === 'blue' ? 'text-brand-blue-500' : 'text-brand-gray-800';
               newParts.push(
                 <span key={`${highlight.text}-${idx}`} className={`font-semibold ${colorClass}`}>
                   {highlight.text}
@@ -46,18 +46,18 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
   return (
     <section id="a-propos" className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+        <h2 className="text-4xl font-bold text-brand-gray-800 mb-12 text-center">
           Qui suis-je au-delà du CV ?
         </h2>
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-gradient-to-br from-olive-50 to-olive-100 p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">{journey.title}</h3>
-            <p className="text-gray-700 leading-relaxed">
+          <div className="bg-brand-gray-50 p-8 rounded-2xl">
+            <h3 className="text-2xl font-bold mb-4 text-brand-gray-800">{journey.title}</h3>
+            <p className="text-brand-gray-600 leading-relaxed">
               {renderJourneyContent(journey.content, journey.highlights)}
             </p>
           </div>
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold mb-6 text-gray-900">Ce qui me fait vibrer</h3>
+            <h3 className="text-2xl font-bold mb-6 text-brand-gray-800">Ce qui me fait vibrer</h3>
             {motivations.map((motivation, idx) => (
               <MotivationCard key={idx} {...motivation} />
             ))}
@@ -65,7 +65,7 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
         </div>
 
         {/* Valeurs */}
-        <div className="bg-gradient-to-r from-olive-600 to-olive-700 p-8 rounded-2xl text-white">
+        <div className="bg-brand-gray-800 p-8 rounded-2xl text-white">
           <h3 className="text-2xl font-bold mb-6 text-center">Mes valeurs professionnelles</h3>
           <div className="grid md:grid-cols-4 gap-6">
             {values.map((val, idx) => (

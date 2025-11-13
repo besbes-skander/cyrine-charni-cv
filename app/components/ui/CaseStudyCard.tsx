@@ -9,11 +9,11 @@ interface CaseStudyCardProps {
 }
 
 const colorClasses: Record<string, { bg: string; iconBg: string }> = {
-  pink: { bg: 'from-burgundy-50', iconBg: 'bg-burgundy-800' },
+  pink: { bg: 'from-brand-red-50', iconBg: 'bg-brand-red-600' },
   purple: { bg: 'from-purple-50', iconBg: 'bg-purple-600' },
-  blue: { bg: 'from-blue-50', iconBg: 'bg-blue-600' },
-  green: { bg: 'from-olive-50', iconBg: 'bg-olive-600' },
-  yellow: { bg: 'from-olive-50', iconBg: 'bg-olive-600' },
+  blue: { bg: 'from-brand-blue-50', iconBg: 'bg-brand-blue-500' },
+  green: { bg: 'from-brand-green-50', iconBg: 'bg-brand-green-500' },
+  yellow: { bg: 'from-brand-yellow-50', iconBg: 'bg-brand-yellow-400' },
 };
 
 export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {

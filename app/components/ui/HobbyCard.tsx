@@ -11,11 +11,11 @@ interface HobbyCardProps {
 }
 
 const colorClasses: Record<string, { bg: string; text: string }> = {
-  pink: { bg: 'from-burgundy-50', text: 'text-burgundy-800' },
+  pink: { bg: 'from-brand-red-50', text: 'text-brand-red-600' },
   purple: { bg: 'from-purple-50', text: 'text-purple-600' },
-  blue: { bg: 'from-blue-50', text: 'text-blue-600' },
-  green: { bg: 'from-olive-50', text: 'text-olive-600' },
-  yellow: { bg: 'from-olive-50', text: 'text-olive-600' },
+  blue: { bg: 'from-brand-blue-50', text: 'text-brand-blue-500' },
+  green: { bg: 'from-brand-green-50', text: 'text-brand-green-500' },
+  yellow: { bg: 'from-brand-yellow-50', text: 'text-brand-yellow-400' },
 };
 
 export default function HobbyCard({ iconName, title, description, color }: HobbyCardProps) {

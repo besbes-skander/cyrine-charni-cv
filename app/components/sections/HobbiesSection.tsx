@@ -31,8 +31,8 @@ export default function HobbiesSection({ title, hobbies, tagline }: HobbiesSecti
           <p className="text-2xl font-bold text-gray-900">
             {tagline.text}{' '}
             {tagline.parts.map((part, idx) => {
-              const colorClass = part.color === 'pink' ? 'text-burgundy-800' :
-                part.color === 'purple' ? 'text-purple-600' : 'text-gray-900';
+              const colorClass = part.color === 'pink' ? 'text-brand-red-600' :
+                part.color === 'purple' ? 'text-purple-600' : 'text-brand-gray-800';
               return (
                 <span key={idx} className={colorClass}>
                   {part.text}
