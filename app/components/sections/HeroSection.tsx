@@ -26,21 +26,15 @@ export default function HeroSection({ personalInfo, siteConfig, stats, onNavigat
   return (
     <section id="hero" className="pt-32 pb-20 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Animated introductory title */}
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-12 animate-fade-in">
-          Au-delà du CV...
+        {/* Main title centered at top */}
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12 animate-fade-in">
+          {personalInfo.headline}
         </h1>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <div className={`inline-block px-4 py-2 ${getPrimaryLightBg()} ${getPrimaryDarkTextColor()} rounded-full text-sm font-semibold mb-4`}>
               {personalInfo.tagline}
             </div>
-            <h2 className="text-5xl font-bold text-gray-900 mb-4">
-              {personalInfo.headline}
-            </h2>
-            <h3 className={`text-3xl font-semibold ${getTextGradient()} mb-6`}>
-              {personalInfo.title}
-            </h3>
             <p className="text-xl text-gray-600 mb-8">
               {personalInfo.subtitle}<br />
               <span className="font-semibold">{personalInfo.experience}</span>
