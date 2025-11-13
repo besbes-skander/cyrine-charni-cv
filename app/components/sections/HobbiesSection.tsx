@@ -11,8 +11,8 @@ interface HobbiesSectionProps {
 
 export default function HobbiesSection({ title, hobbies, tagline }: HobbiesSectionProps) {
   return (
-    <section className="py-24 px-6 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <div className="py-24 px-6 bg-white min-h-screen flex items-center">
+      <div className="max-w-6xl mx-auto w-full">
         <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-800 mb-16 text-center">
           {title}
         </h2>
@@ -39,6 +39,6 @@ export default function HobbiesSection({ title, hobbies, tagline }: HobbiesSecti
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

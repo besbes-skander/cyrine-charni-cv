@@ -72,7 +72,7 @@ export default function Home() {
   const typedFooterData = footerData as FooterData;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 overflow-x-hidden">
+    <>
       <Navigation
         items={typedNavigationData.items}
         isScrolled={isScrolled}
@@ -80,43 +80,58 @@ export default function Home() {
         name={typedPersonalInfo.name}
       />
 
-      <HeroSection
-        personalInfo={typedPersonalInfo}
-        siteConfig={siteConfig}
-        onNavigate={scrollToSection}
-      />
+      <div className="fullpage-container">
+        <section id="accueil" className="fullpage-section">
+          <HeroSection
+            personalInfo={typedPersonalInfo}
+            siteConfig={siteConfig}
+            onNavigate={scrollToSection}
+          />
+        </section>
 
-      <AboutSection
-        journey={typedAboutData.journey}
-        motivations={typedAboutData.motivations}
-        values={typedAboutData.values}
-      />
+        <section id="a-propos" className="fullpage-section">
+          <AboutSection
+            journey={typedAboutData.journey}
+            motivations={typedAboutData.motivations}
+            values={typedAboutData.values}
+          />
+        </section>
 
-      <SkillsSection
-        coreSkills={typedSkillsData.coreSkills}
-        toolStack={typedSkillsData.toolStack}
-      />
+        <section id="competences" className="fullpage-section">
+          <SkillsSection
+            coreSkills={typedSkillsData.coreSkills}
+            toolStack={typedSkillsData.toolStack}
+          />
+        </section>
 
-      <CaseStudiesSection caseStudies={typedCaseStudiesData.caseStudies} />
+        <section id="realisations" className="fullpage-section">
+          <CaseStudiesSection caseStudies={typedCaseStudiesData.caseStudies} />
+        </section>
 
-      <JobSearchSection
-        title={typedJobSearchData.title}
-        criteria={typedJobSearchData.criteria}
-        summary={typedJobSearchData.summary}
-      />
+        <section id="recherche" className="fullpage-section">
+          <JobSearchSection
+            title={typedJobSearchData.title}
+            criteria={typedJobSearchData.criteria}
+            summary={typedJobSearchData.summary}
+          />
+        </section>
 
-      <HobbiesSection
-        title={typedHobbiesData.title}
-        hobbies={typedHobbiesData.hobbies}
-        tagline={typedHobbiesData.tagline}
-      />
+        <section id="hobbies" className="fullpage-section">
+          <HobbiesSection
+            title={typedHobbiesData.title}
+            hobbies={typedHobbiesData.hobbies}
+            tagline={typedHobbiesData.tagline}
+          />
+        </section>
 
-      <ContactSection
-        siteConfig={siteConfig}
-        contactData={typedContactData}
-      />
-
-      <Footer text={typedFooterData.text} />
-    </div>
+        <section id="contact" className="fullpage-section">
+          <ContactSection
+            siteConfig={siteConfig}
+            contactData={typedContactData}
+          />
+          <Footer text={typedFooterData.text} />
+        </section>
+      </div>
+    </>
   );
 }

@@ -12,8 +12,8 @@ interface JobSearchSectionProps {
 
 export default function JobSearchSection({ title, criteria, summary }: JobSearchSectionProps) {
   return (
-    <section className="py-24 px-6 bg-white">
-      <div className="max-w-4xl mx-auto text-center">
+    <div className="py-24 px-6 bg-white min-h-screen flex items-center">
+      <div className="max-w-4xl mx-auto text-center w-full">
         <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-800 mb-16">{title}</h2>
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {criteria.map((item, idx) => (
@@ -22,6 +22,6 @@ export default function JobSearchSection({ title, criteria, summary }: JobSearch
         </div>
         <p className="text-lg text-brand-gray-500 whitespace-pre-line leading-relaxed">{summary}</p>
       </div>
-    </section>
+    </div>
   );
 }
