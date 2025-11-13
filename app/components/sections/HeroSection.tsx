@@ -27,9 +27,11 @@ export default function HeroSection({ personalInfo, siteConfig, onNavigate }: He
         </h1>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-xl text-gray-600 mb-8">
-              {personalInfo.subtitle}<br />
-              <span className="font-semibold">{personalInfo.experience}</span>
+            <p className="text-xl text-gray-700 font-medium mb-2">
+              {personalInfo.subtitle}
+            </p>
+            <p className="text-base text-gray-600 mb-8">
+              {personalInfo.experience}
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <div className="flex items-center gap-2 text-gray-700">
@@ -76,6 +78,22 @@ export default function HeroSection({ personalInfo, siteConfig, onNavigate }: He
                 priority
               />
             </div>
+          </div>
+        </div>
+
+        {/* Metric Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+          <div className="bg-gradient-to-br from-burgundy-50 to-white p-6 rounded-xl shadow-md border border-burgundy-100">
+            <div className="text-4xl md:text-5xl font-bold text-burgundy-800 mb-2">150+</div>
+            <div className="text-sm text-gray-600">Contrats signés</div>
+          </div>
+          <div className="bg-gradient-to-br from-gold-50 to-white p-6 rounded-xl shadow-md border border-gold-100">
+            <div className="text-4xl md:text-5xl font-bold text-gold-700 mb-2">80K€</div>
+            <div className="text-sm text-gray-600">CA généré</div>
+          </div>
+          <div className="bg-gradient-to-br from-olive-50 to-white p-6 rounded-xl shadow-md border border-olive-100">
+            <div className="text-4xl md:text-5xl font-bold text-olive-700 mb-2">92%</div>
+            <div className="text-sm text-gray-600">Taux de rétention</div>
           </div>
         </div>
       </div>

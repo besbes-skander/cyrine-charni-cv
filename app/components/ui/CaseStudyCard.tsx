@@ -79,7 +79,7 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
       {/* Results */}
       {caseStudy.results && (
         <div className="bg-white p-6 rounded-xl">
-          <h4 className="font-bold text-gray-900 mb-4">📈 Les résultats</h4>
+          <h4 className="font-bold text-gray-900 mb-4">Les résultats</h4>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {caseStudy.results.map((stat, idx) => (
               <ResultStat key={idx} {...stat} />
@@ -91,7 +91,7 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
       {/* Impact (for HUNTEED case) */}
       {caseStudy.impact && (
         <div className="bg-white p-6 rounded-xl">
-          <h4 className="font-bold text-gray-900 mb-4">📈 Impact</h4>
+          <h4 className="font-bold text-gray-900 mb-4">Impact</h4>
           <div className="text-center">
             <div className="text-5xl font-bold text-blue-600 mb-2">{caseStudy.impact.value}</div>
             <div className="text-gray-600">{caseStudy.impact.label}</div>

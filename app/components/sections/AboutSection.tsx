@@ -47,7 +47,7 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
     <section id="a-propos" className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
-          🌟 Qui suis-je au-delà du CV ?
+          Qui suis-je au-delà du CV ?
         </h2>
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="bg-gradient-to-br from-olive-50 to-gold-50 p-8 rounded-2xl">
@@ -57,7 +57,7 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
             </p>
           </div>
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold mb-6 text-gray-900">💡 Ce qui me fait vibrer</h3>
+            <h3 className="text-2xl font-bold mb-6 text-gray-900">Ce qui me fait vibrer</h3>
             {motivations.map((motivation, idx) => (
               <MotivationCard key={idx} {...motivation} />
             ))}
@@ -66,7 +66,7 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
 
         {/* Valeurs */}
         <div className="bg-gradient-to-r from-olive-600 to-gold-600 p-8 rounded-2xl text-white">
-          <h3 className="text-2xl font-bold mb-6 text-center">🎯 Mes valeurs professionnelles</h3>
+          <h3 className="text-2xl font-bold mb-6 text-center">Mes valeurs professionnelles</h3>
           <div className="grid md:grid-cols-4 gap-6">
             {values.map((val, idx) => (
               <ValueCard key={idx} {...val} />

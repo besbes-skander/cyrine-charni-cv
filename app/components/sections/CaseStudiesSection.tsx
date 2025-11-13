@@ -12,7 +12,7 @@ export default function CaseStudiesSection({ caseStudies }: CaseStudiesSectionPr
     <section id="realisations" className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
-          📊 Mes réalisations concrètes
+          Mes réalisations concrètes
         </h2>
 
         <div className="space-y-12">

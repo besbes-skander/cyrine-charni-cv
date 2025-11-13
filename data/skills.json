@@ -41,16 +41,16 @@
     {
       "category": "CRM & Sales",
       "tools": [
-        "Salesforce ⭐⭐⭐⭐⭐",
-        "HubSpot ⭐⭐⭐⭐⭐",
-        "Sellsy ⭐⭐⭐⭐",
+        "Salesforce",
+        "HubSpot",
+        "Sellsy",
         "LinkedIn Sales Navigator"
       ]
     },
     {
       "category": "Gestion de projet",
       "tools": [
-        "Notion ⭐⭐⭐⭐⭐",
+        "Notion",
         "Trello, Monday, Asana",
         "ClickUp",
         "Jira"

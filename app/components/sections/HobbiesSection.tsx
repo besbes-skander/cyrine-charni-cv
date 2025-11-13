@@ -39,7 +39,7 @@ export default function HobbiesSection({ title, hobbies, tagline }: HobbiesSecti
                   {idx < tagline.parts.length - 1 ? ', ' : ''}
                 </span>
               );
-            })} ✨
+            })}
           </p>
         </div>
       </div>
