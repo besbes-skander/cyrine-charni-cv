@@ -8,11 +8,11 @@ interface MotivationCardProps {
 
 export default function MotivationCard({ icon, title, description }: MotivationCardProps) {
   return (
-    <div className="flex gap-4 items-start p-4 bg-gray-50 rounded-xl hover:shadow-md transition-shadow">
-      <span className="text-3xl">{icon}</span>
+    <div className="flex gap-4 items-start p-5 bg-white rounded-lg border border-brand-gray-200">
+      <span className="text-2xl">{icon}</span>
       <div>
-        <h4 className="font-bold text-gray-900 mb-1">{title}</h4>
-        <p className="text-gray-600 text-sm">{description}</p>
+        <h4 className="font-semibold text-brand-gray-800 mb-2">{title}</h4>
+        <p className="text-brand-gray-500 text-sm leading-relaxed">{description}</p>
       </div>
     </div>
   );

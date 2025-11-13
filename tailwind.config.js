@@ -45,57 +45,78 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: '0', transform: 'translateY(-10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-in': 'fade-in 1s ease-out forwards',
+      },
       colors: {
-        primary: {
-          50: '#fdf2f8',
-          100: '#fce7f3',
-          200: '#fbcfe8',
-          300: '#f9a8d4',
-          400: '#f472b6',
-          500: '#ec4899',
-          600: '#db2777',
-          700: '#be185d',
-          800: '#9d174d',
-          900: '#831843',
+        // Warm Minimal Palette - Elegant & Human
+        'brand-coral': {
+          DEFAULT: '#E57373',
+          50: '#FFEBEE',
+          100: '#FFCDD2',
+          200: '#EF9A9A',
+          300: '#E57373', // Main coral - Warm & elegant accent
+          400: '#EF5350',
+          500: '#F44336',
+          600: '#E53935',
+          700: '#D32F2F',
+          800: '#C62828',
+          900: '#B71C1C',
         },
-        // Custom color palette: Burgundy Red (#9e1533)
+        'brand-gray': {
+          DEFAULT: '#1F2937',
+          50: '#FAFAFA', // Almost white for alt backgrounds
+          100: '#F3F4F6',
+          200: '#E5E7EB', // Subtle borders
+          300: '#D1D5DB',
+          400: '#9CA3AF',
+          500: '#6B7280', // Secondary text
+          600: '#4B5563',
+          700: '#374151',
+          800: '#1F2937', // Primary text (dark gray, not black)
+          900: '#111827',
+        },
+        // Legacy mappings (for compatibility)
+        'brand-red': {
+          DEFAULT: '#E57373',
+          50: '#FFEBEE',
+          100: '#FFCDD2',
+          200: '#EF9A9A',
+          300: '#E57373',
+          400: '#EF5350',
+          500: '#E57373', // Mapped to coral
+          600: '#E57373',
+          700: '#D32F2F',
+          800: '#C62828',
+          900: '#B71C1C',
+        },
+        'brand-blue': {
+          DEFAULT: '#E57373',
+          500: '#E57373', // Mapped to coral (no more blue)
+        },
+        'brand-green': {
+          DEFAULT: '#E57373',
+          500: '#E57373', // Mapped to coral (no more green)
+        },
         burgundy: {
-          50: '#fef2f4',
-          100: '#fde6e9',
-          200: '#fccdd6',
-          300: '#f9a5b3',
-          400: '#f4748a',
-          500: '#ea4d6b',
-          600: '#d63554',
-          700: '#b32644',
-          800: '#9e1533', // Main burgundy color
-          900: '#7a1127',
+          50: '#FFEBEE',
+          600: '#E57373',
+          800: '#E57373',
         },
-        // Custom color palette: Gold (#dc8f09)
-        gold: {
-          50: '#fef9e7',
-          100: '#fdf3c7',
-          200: '#fbe68a',
-          300: '#f9d84d',
-          400: '#f4c520',
-          500: '#e4ab13',
-          600: '#dc8f09', // Main gold color
-          700: '#b77308',
-          800: '#945e0c',
-          900: '#7a4e10',
-        },
-        // Custom color palette: Olive Green (#708246)
         olive: {
-          50: '#f6f8f3',
-          100: '#eaefe2',
-          200: '#d5dfc5',
-          300: '#b8c89e',
-          400: '#9bae77',
-          500: '#849958',
-          600: '#708246', // Main olive color
-          700: '#5a6838',
-          800: '#4a5530',
-          900: '#3e472a',
+          50: '#FAFAFA',
+          600: '#1F2937',
+          700: '#1F2937',
+        },
+        gold: {
+          400: '#E57373',
+          500: '#E57373',
         },
       }
     },

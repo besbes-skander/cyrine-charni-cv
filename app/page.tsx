@@ -83,7 +83,6 @@ export default function Home() {
       <HeroSection
         personalInfo={typedPersonalInfo}
         siteConfig={siteConfig}
-        stats={typedHeroStatsData.stats}
         onNavigate={scrollToSection}
       />
 

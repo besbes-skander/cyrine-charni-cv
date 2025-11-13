@@ -10,24 +10,14 @@ interface HobbyCardProps {
   color: string;
 }
 
-const colorClasses: Record<string, { bg: string; text: string }> = {
-  pink: { bg: 'from-burgundy-50', text: 'text-burgundy-800' },
-  purple: { bg: 'from-gold-50', text: 'text-gold-600' },
-  blue: { bg: 'from-blue-50', text: 'text-blue-500' },
-  green: { bg: 'from-green-50', text: 'text-green-500' },
-  yellow: { bg: 'from-yellow-50', text: 'text-yellow-500' },
-};
-
 export default function HobbyCard({ iconName, title, description, color }: HobbyCardProps) {
-  const classes = colorClasses[color] || colorClasses.pink;
-
   return (
-    <div className={`bg-gradient-to-br ${classes.bg} to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow`}>
-      <div className={`${classes.text} mb-4`}>
-        {getIcon(iconName, { size: 40 })}
+    <div className="bg-brand-gray-50 p-6 rounded-lg border border-brand-gray-200">
+      <div className="text-brand-coral-300 mb-4">
+        {getIcon(iconName, { size: 36 })}
       </div>
-      <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <h3 className="text-lg font-semibold text-brand-gray-800 mb-2">{title}</h3>
+      <p className="text-sm text-brand-gray-500 leading-relaxed">{description}</p>
     </div>
   );
 }

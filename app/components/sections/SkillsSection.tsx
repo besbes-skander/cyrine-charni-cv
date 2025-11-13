@@ -11,16 +11,16 @@ interface SkillsSectionProps {
 
 export default function SkillsSection({ coreSkills, toolStack }: SkillsSectionProps) {
   return (
-    <section id="competences" className="py-20 px-6">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
-          🛠️ Mes compétences & outils
+    <section id="competences" className="py-24 px-6 bg-white">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-800 mb-16 text-center">
+          Mes compétences & outils
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-12">
           {/* Compétences principales */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
-            <h3 className="text-2xl font-bold mb-6 text-gray-900">Compétences clés</h3>
+          <div className="bg-brand-gray-50 p-10 rounded-lg border border-brand-gray-200">
+            <h3 className="text-2xl font-semibold mb-8 text-brand-gray-800">Compétences clés</h3>
             <div className="space-y-6">
               {coreSkills.map((category, idx) => (
                 <SkillCategory key={idx} {...category} />
@@ -29,8 +29,8 @@ export default function SkillsSection({ coreSkills, toolStack }: SkillsSectionPr
           </div>
 
           {/* Stack technique */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
-            <h3 className="text-2xl font-bold mb-6 text-gray-900">Stack d'outils</h3>
+          <div className="bg-brand-gray-50 p-10 rounded-lg border border-brand-gray-200">
+            <h3 className="text-2xl font-semibold mb-8 text-brand-gray-800">Stack d'outils</h3>
             <div className="space-y-6">
               {toolStack.map((stack, idx) => (
                 <ToolStack key={idx} {...stack} />
