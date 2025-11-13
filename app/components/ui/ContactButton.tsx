@@ -12,11 +12,11 @@ interface ContactButtonProps {
 }
 
 export default function ContactButton({ href, icon, children, variant, external = false }: ContactButtonProps) {
-  const baseClasses = "flex items-center justify-center gap-3 p-6 rounded-2xl font-bold text-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all";
+  const baseClasses = "flex items-center justify-center gap-3 p-6 rounded-lg font-medium text-lg transition-colors";
 
   const variantClasses = variant === 'primary'
-    ? `${getBrandGradient()} text-white`
-    : `bg-white text-gray-900 border-2 border-gray-300 ${getPrimaryHoverBorderColor()}`;
+    ? "bg-brand-coral-300 text-white hover:bg-brand-coral-400"
+    : "bg-white text-brand-gray-800 border-2 border-brand-gray-200 hover:border-brand-gray-300 hover:bg-brand-gray-50";
 
   const externalProps = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
 

@@ -12,15 +12,15 @@ interface JobSearchSectionProps {
 
 export default function JobSearchSection({ title, criteria, summary }: JobSearchSectionProps) {
   return (
-    <section className={`py-20 px-6 ${getBrandGradient('br')} text-white`}>
+    <section className="py-24 px-6 bg-white">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-8">{title}</h2>
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-800 mb-16">{title}</h2>
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
           {criteria.map((item, idx) => (
             <JobCriteriaCard key={idx} {...item} />
           ))}
         </div>
-        <p className="text-xl opacity-90 whitespace-pre-line">{summary}</p>
+        <p className="text-lg text-brand-gray-500 whitespace-pre-line leading-relaxed">{summary}</p>
       </div>
     </section>
   );

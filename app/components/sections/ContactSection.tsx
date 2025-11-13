@@ -13,12 +13,12 @@ interface ContactSectionProps {
 
 export default function ContactSection({ siteConfig, contactData }: ContactSectionProps) {
   return (
-    <section id="contact" className="py-20 px-6 bg-white">
+    <section id="contact" className="py-24 px-6 bg-brand-gray-50">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-800 mb-6">
           {contactData.title}
         </h2>
-        <p className="text-xl text-gray-600 mb-12 whitespace-pre-line">
+        <p className="text-lg text-brand-gray-500 mb-12 whitespace-pre-line">
           {contactData.subtitle}
         </p>
 
@@ -40,32 +40,32 @@ export default function ContactSection({ siteConfig, contactData }: ContactSecti
           </ContactButton>
         </div>
 
-        <div className="flex justify-center gap-6 mb-12">
+        <div className="flex justify-center gap-8 mb-12 text-brand-gray-500">
           <a
             href={siteConfig.links.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex items-center gap-2 text-gray-700 ${getPrimaryHoverTextColor()} transition-colors`}
+            className="flex items-center gap-2 hover:text-brand-coral-300 transition-colors"
           >
             <Linkedin size={24} />
-            <span className="font-semibold">LinkedIn</span>
+            <span className="font-medium">LinkedIn</span>
           </a>
           <a
             href={`tel:${siteConfig.contact.phoneRaw}`}
-            className={`flex items-center gap-2 text-gray-700 ${getPrimaryHoverTextColor()} transition-colors`}
+            className="flex items-center gap-2 hover:text-brand-coral-300 transition-colors"
           >
             <Phone size={24} />
-            <span className="font-semibold">{siteConfig.contact.phone}</span>
+            <span className="font-medium">{siteConfig.contact.phone}</span>
           </a>
         </div>
 
-        <div className="bg-gray-50 p-8 rounded-2xl">
-          <h3 className="font-bold text-gray-900 mb-4">Dispo pour :</h3>
+        <div className="bg-white p-10 rounded-lg border border-brand-gray-200">
+          <h3 className="font-semibold text-brand-gray-800 mb-6">Dispo pour :</h3>
           <div className="grid md:grid-cols-2 gap-4 text-left">
             {contactData.availability.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-2">
-                <span className={getPrimaryTextColor()}>✓</span>
-                <span className="text-gray-700">{item}</span>
+              <div key={idx} className="flex items-center gap-3">
+                <span className="text-brand-coral-300">✓</span>
+                <span className="text-brand-gray-500">{item}</span>
               </div>
             ))}
           </div>

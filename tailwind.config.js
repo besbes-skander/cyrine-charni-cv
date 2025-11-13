@@ -55,108 +55,68 @@ module.exports = {
         'fade-in': 'fade-in 1s ease-out forwards',
       },
       colors: {
-        // Clean & Punchy Palette - Main Brand Colors
-        'brand-red': {
-          DEFAULT: '#D63031',
-          50: '#FEF2F2',
-          100: '#FEE2E2',
-          200: '#FECACA',
-          300: '#FCA5A5',
-          400: '#F87171',
-          500: '#EF4444',
-          600: '#D63031', // Main red - CTAs, chiffres clés
-          700: '#B91C1C',
-          800: '#991B1B',
-          900: '#7F1D1D',
-        },
-        'brand-blue': {
-          DEFAULT: '#0984E3',
-          50: '#EFF6FF',
-          100: '#DBEAFE',
-          200: '#BFDBFE',
-          300: '#93C5FD',
-          400: '#60A5FA',
-          500: '#0984E3', // Main blue - CTAs secondaires
-          600: '#2563EB',
-          700: '#1D4ED8',
-          800: '#1E40AF',
-          900: '#1E3A8A',
+        // Warm Minimal Palette - Elegant & Human
+        'brand-coral': {
+          DEFAULT: '#E57373',
+          50: '#FFEBEE',
+          100: '#FFCDD2',
+          200: '#EF9A9A',
+          300: '#E57373', // Main coral - Warm & elegant accent
+          400: '#EF5350',
+          500: '#F44336',
+          600: '#E53935',
+          700: '#D32F2F',
+          800: '#C62828',
+          900: '#B71C1C',
         },
         'brand-gray': {
-          DEFAULT: '#2D3436',
-          50: '#F5F6FA', // Gris clair pour sections
+          DEFAULT: '#1F2937',
+          50: '#FAFAFA', // Almost white for alt backgrounds
           100: '#F3F4F6',
-          200: '#E5E7EB',
+          200: '#E5E7EB', // Subtle borders
           300: '#D1D5DB',
           400: '#9CA3AF',
-          500: '#6B7280',
-          600: '#636E72', // Gris moyen - textes secondaires
+          500: '#6B7280', // Secondary text
+          600: '#4B5563',
           700: '#374151',
-          800: '#2D3436', // Gris anthracite - textes principaux
+          800: '#1F2937', // Primary text (dark gray, not black)
           900: '#111827',
+        },
+        // Legacy mappings (for compatibility)
+        'brand-red': {
+          DEFAULT: '#E57373',
+          50: '#FFEBEE',
+          100: '#FFCDD2',
+          200: '#EF9A9A',
+          300: '#E57373',
+          400: '#EF5350',
+          500: '#E57373', // Mapped to coral
+          600: '#E57373',
+          700: '#D32F2F',
+          800: '#C62828',
+          900: '#B71C1C',
+        },
+        'brand-blue': {
+          DEFAULT: '#E57373',
+          500: '#E57373', // Mapped to coral (no more blue)
         },
         'brand-green': {
-          DEFAULT: '#00B894',
-          50: '#ECFDF5',
-          100: '#D1FAE5',
-          200: '#A7F3D0',
-          300: '#6EE7B7',
-          400: '#34D399',
-          500: '#00B894', // Vert succès - métriques positives
-          600: '#059669',
-          700: '#047857',
-          800: '#065F46',
-          900: '#064E3B',
+          DEFAULT: '#E57373',
+          500: '#E57373', // Mapped to coral (no more green)
         },
-        'brand-yellow': {
-          DEFAULT: '#FDCB6E',
-          50: '#FFFBEB',
-          100: '#FEF3C7',
-          200: '#FDE68A',
-          300: '#FCD34D',
-          400: '#FDCB6E', // Jaune doré - hovers subtils
-          500: '#F59E0B',
-          600: '#D97706',
-          700: '#B45309',
-          800: '#92400E',
-          900: '#78350F',
-        },
-        // Legacy mappings (redirect to new colors for backwards compatibility)
         burgundy: {
-          50: '#FEF2F2',
-          100: '#FEE2E2',
-          200: '#FECACA',
-          300: '#FCA5A5',
-          400: '#F87171',
-          500: '#EF4444',
-          600: '#D63031',
-          700: '#B91C1C',
-          800: '#D63031', // Mapped to brand-red
-          900: '#7F1D1D',
+          50: '#FFEBEE',
+          600: '#E57373',
+          800: '#E57373',
         },
         olive: {
-          50: '#F5F6FA',
-          100: '#F3F4F6',
-          200: '#E5E7EB',
-          300: '#D1D5DB',
-          400: '#9CA3AF',
-          500: '#6B7280',
-          600: '#2D3436', // Mapped to brand-gray
-          700: '#2D3436',
-          800: '#2D3436',
-          900: '#111827',
+          50: '#FAFAFA',
+          600: '#1F2937',
+          700: '#1F2937',
         },
         gold: {
-          50: '#FFFBEB',
-          100: '#FEF3C7',
-          200: '#FDE68A',
-          300: '#FCD34D',
-          400: '#FDCB6E',
-          500: '#FDCB6E', // Mapped to brand-yellow
-          600: '#FDCB6E',
-          700: '#D97706',
-          800: '#B45309',
-          900: '#92400E',
+          400: '#E57373',
+          500: '#E57373',
         },
       }
     },

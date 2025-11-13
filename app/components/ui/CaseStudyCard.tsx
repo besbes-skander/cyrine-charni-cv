@@ -8,29 +8,19 @@ interface CaseStudyCardProps {
   caseStudy: CaseStudy;
 }
 
-const colorClasses: Record<string, { bg: string; iconBg: string }> = {
-  pink: { bg: 'from-brand-red-50', iconBg: 'bg-brand-red-600' },
-  purple: { bg: 'from-purple-50', iconBg: 'bg-purple-600' },
-  blue: { bg: 'from-brand-blue-50', iconBg: 'bg-brand-blue-500' },
-  green: { bg: 'from-brand-green-50', iconBg: 'bg-brand-green-500' },
-  yellow: { bg: 'from-brand-yellow-50', iconBg: 'bg-brand-yellow-400' },
-};
-
 export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
-  const classes = colorClasses[caseStudy.color] || colorClasses.pink;
-
   return (
-    <div className={`bg-gradient-to-br ${classes.bg} to-white p-8 rounded-2xl shadow-xl`}>
+    <div className="bg-white p-10 rounded-lg border border-brand-gray-200">
       {/* Header */}
-      <div className="flex items-start gap-4 mb-6">
-        <div className={`${classes.iconBg} p-3 rounded-xl`}>
-          {getIcon(caseStudy.icon, { className: 'text-white', size: 32 })}
+      <div className="flex items-start gap-4 mb-8">
+        <div className="bg-brand-coral-300 p-3 rounded-lg">
+          {getIcon(caseStudy.icon, { className: 'text-white', size: 28 })}
         </div>
         <div>
-          <h3 className="text-2xl font-bold text-gray-900">
+          <h3 className="text-2xl font-bold text-brand-gray-800">
             {caseStudy.title}
           </h3>
-          <p className="text-gray-600">{caseStudy.role} | {caseStudy.period}</p>
+          <p className="text-brand-gray-500">{caseStudy.role} | {caseStudy.period}</p>
         </div>
       </div>
 
@@ -40,8 +30,8 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
           {/* Challenge */}
           {caseStudy.challenge && (
             <div>
-              <h4 className="font-bold text-gray-900 mb-4">{caseStudy.challenge.title}</h4>
-              <ul className="space-y-2 text-gray-700">
+              <h4 className="font-semibold text-brand-gray-800 mb-4">{caseStudy.challenge.title}</h4>
+              <ul className="space-y-2 text-brand-gray-500">
                 {caseStudy.challenge.points.map((point, idx) => (
                   <li key={idx}>• {point}</li>
                 ))}
@@ -52,11 +42,11 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
           {/* Strategy or Mission */}
           {caseStudy.strategy && (
             <div>
-              <h4 className="font-bold text-gray-900 mb-4">{caseStudy.strategy.title}</h4>
-              <ul className="space-y-2 text-gray-700">
+              <h4 className="font-semibold text-brand-gray-800 mb-4">{caseStudy.strategy.title}</h4>
+              <ul className="space-y-2 text-brand-gray-500">
                 {caseStudy.strategy.points.map((point, idx) => (
                   <li key={idx}>
-                    • <span className="font-semibold">{point.text}</span> : {point.detail}
+                    • <span className="font-semibold text-brand-gray-800">{point.text}</span> : {point.detail}
                   </li>
                 ))}
               </ul>
@@ -65,8 +55,8 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
 
           {caseStudy.mission && (
             <div>
-              <h4 className="font-bold text-gray-900 mb-4">{caseStudy.mission.title}</h4>
-              <ul className="space-y-2 text-gray-700">
+              <h4 className="font-semibold text-brand-gray-800 mb-4">{caseStudy.mission.title}</h4>
+              <ul className="space-y-2 text-brand-gray-500">
                 {caseStudy.mission.points.map((point, idx) => (
                   <li key={idx}>• {point}</li>
                 ))}
@@ -78,8 +68,8 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
 
       {/* Results */}
       {caseStudy.results && (
-        <div className="bg-white p-6 rounded-xl">
-          <h4 className="font-bold text-gray-900 mb-4">Les résultats</h4>
+        <div className="bg-brand-gray-50 p-6 rounded-lg border-t border-brand-gray-200">
+          <h4 className="font-semibold text-brand-gray-800 mb-4">Les résultats</h4>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {caseStudy.results.map((stat, idx) => (
               <ResultStat key={idx} {...stat} />
@@ -90,12 +80,12 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
 
       {/* Impact (for HUNTEED case) */}
       {caseStudy.impact && (
-        <div className="bg-white p-6 rounded-xl">
-          <h4 className="font-bold text-gray-900 mb-4">Impact</h4>
+        <div className="bg-brand-gray-50 p-6 rounded-lg border-t border-brand-gray-200">
+          <h4 className="font-semibold text-brand-gray-800 mb-4">Impact</h4>
           <div className="text-center">
-            <div className="text-5xl font-bold text-blue-600 mb-2">{caseStudy.impact.value}</div>
-            <div className="text-gray-600">{caseStudy.impact.label}</div>
-            <div className="mt-4 text-sm text-gray-500">
+            <div className="text-5xl font-bold text-brand-coral-300 mb-2">{caseStudy.impact.value}</div>
+            <div className="text-brand-gray-500">{caseStudy.impact.label}</div>
+            <div className="mt-4 text-sm text-brand-gray-500">
               {caseStudy.impact.detail}
             </div>
           </div>

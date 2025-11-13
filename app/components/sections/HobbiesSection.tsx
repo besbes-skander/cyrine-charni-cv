@@ -11,9 +11,9 @@ interface HobbiesSectionProps {
 
 export default function HobbiesSection({ title, hobbies, tagline }: HobbiesSectionProps) {
   return (
-    <section className="py-20 px-6">
+    <section className="py-24 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-800 mb-16 text-center">
           {title}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
@@ -27,19 +27,15 @@ export default function HobbiesSection({ title, hobbies, tagline }: HobbiesSecti
             />
           ))}
         </div>
-        <div className="text-center mt-12">
-          <p className="text-2xl font-bold text-gray-900">
+        <div className="text-center mt-16">
+          <p className="text-xl font-semibold text-brand-gray-800">
             {tagline.text}{' '}
-            {tagline.parts.map((part, idx) => {
-              const colorClass = part.color === 'pink' ? 'text-brand-red-600' :
-                part.color === 'purple' ? 'text-purple-600' : 'text-brand-gray-800';
-              return (
-                <span key={idx} className={colorClass}>
-                  {part.text}
-                  {idx < tagline.parts.length - 1 ? ', ' : ''}
-                </span>
-              );
-            })}
+            {tagline.parts.map((part, idx) => (
+              <span key={idx} className="text-brand-coral-300">
+                {part.text}
+                {idx < tagline.parts.length - 1 ? ', ' : ''}
+              </span>
+            ))}
           </p>
         </div>
       </div>
