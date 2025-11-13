@@ -8,6 +8,7 @@ import {
   getPrimaryTextColor,
   getPrimaryHoverTextColor,
   getPrimaryHoverBorderColor,
+  getBrandGradient,
 } from '@/utils/themeHelpers';
 
 interface HeroSectionProps {
