@@ -2,27 +2,21 @@
 
 import { Mail, Linkedin, Phone, MapPin, Calendar } from 'lucide-react';
 import Image from 'next/image';
-import { PersonalInfo, HeroStat } from '@/types';
+import { PersonalInfo } from '@/types';
 import { SiteConfig } from '@/config/site.config';
-import StatCard from '../ui/StatCard';
 import {
-  getTextGradient,
-  getBrandGradient,
   getPrimaryTextColor,
   getPrimaryHoverTextColor,
-  getPrimaryLightBg,
-  getPrimaryDarkTextColor,
   getPrimaryHoverBorderColor,
 } from '@/utils/themeHelpers';
 
 interface HeroSectionProps {
   personalInfo: PersonalInfo;
   siteConfig: SiteConfig;
-  stats: HeroStat[];
   onNavigate: (id: string) => void;
 }
 
-export default function HeroSection({ personalInfo, siteConfig, stats, onNavigate }: HeroSectionProps) {
+export default function HeroSection({ personalInfo, siteConfig, onNavigate }: HeroSectionProps) {
   return (
     <section id="hero" className="pt-32 pb-20 px-6">
       <div className="max-w-6xl mx-auto">
@@ -72,7 +66,7 @@ export default function HeroSection({ personalInfo, siteConfig, stats, onNavigat
             </div>
           </div>
           <div className="relative">
-            <div className={`relative w-full h-96 ${getBrandGradient('br', 'light')} rounded-2xl overflow-hidden shadow-2xl`}>
+            <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/profile.jpg"
                 alt={personalInfo.name}
@@ -81,10 +75,6 @@ export default function HeroSection({ personalInfo, siteConfig, stats, onNavigat
                 priority
               />
             </div>
-            {/* Stats floating cards */}
-            {stats.map((stat, idx) => (
-              <StatCard key={idx} {...stat} />
-            ))}
           </div>
         </div>
       </div>
