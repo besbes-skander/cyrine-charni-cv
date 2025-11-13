@@ -16,15 +16,6 @@ export const getPrimaryColor = (): string => {
 };
 
 /**
- * Get the secondary brand color class
- * @example getSecondaryColor() // Returns: 'purple-600'
- */
-export const getSecondaryColor = (): string => {
-  const { color, shade } = themeConfig.brand.secondary;
-  return `${color}-${shade}`;
-};
-
-/**
  * Get the brand gradient classes for backgrounds
  * @param direction - Gradient direction (default: 'r' for right)
  * @param variant - Gradient variant: 'normal' or 'light' (default: 'normal')
@@ -57,14 +48,6 @@ export const getTextGradient = (): string => {
  */
 export const getPrimaryTextColor = (): string => {
   return `text-${getPrimaryColor()}`;
-};
-
-/**
- * Get secondary color text class
- * @example getSecondaryTextColor() // Returns: 'text-purple-600'
- */
-export const getSecondaryTextColor = (): string => {
-  return `text-${getSecondaryColor()}`;
 };
 
 /**

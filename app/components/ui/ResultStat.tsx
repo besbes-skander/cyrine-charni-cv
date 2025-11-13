@@ -10,10 +10,10 @@ interface ResultStatProps {
 
 const colorClasses: Record<ColorVariant, { bg: string; text: string }> = {
   pink: { bg: 'bg-burgundy-50', text: 'text-burgundy-800' },
-  purple: { bg: 'bg-gold-50', text: 'text-gold-600' },
+  purple: { bg: 'bg-purple-50', text: 'text-purple-600' },
   blue: { bg: 'bg-blue-50', text: 'text-blue-600' },
-  green: { bg: 'bg-green-50', text: 'text-green-600' },
-  yellow: { bg: 'bg-yellow-50', text: 'text-yellow-600' },
+  green: { bg: 'bg-olive-50', text: 'text-olive-600' },
+  yellow: { bg: 'bg-olive-50', text: 'text-olive-600' },
 };
 
 export default function ResultStat({ label, value, color }: ResultStatProps) {

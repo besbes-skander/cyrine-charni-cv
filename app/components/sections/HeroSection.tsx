@@ -1,6 +1,6 @@
 'use client';
 
-import { Mail, Linkedin, Phone, MapPin, Calendar } from 'lucide-react';
+import { Mail, Linkedin, Phone, MapPin, Calendar, Download } from 'lucide-react';
 import Image from 'next/image';
 import { PersonalInfo } from '@/types';
 import { SiteConfig } from '@/config/site.config';
@@ -49,23 +49,31 @@ export default function HeroSection({ personalInfo, siteConfig, onNavigate }: He
                 <span>{siteConfig.contact.phone}</span>
               </div>
             </div>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               <a
                 href={siteConfig.links.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`px-6 py-3 ${getBrandGradient()} text-white rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all flex items-center gap-2`}
+                className="px-6 py-3 bg-burgundy-800 text-white rounded-lg font-semibold hover:bg-burgundy-900 hover:shadow-lg transform hover:-translate-y-1 transition-all flex items-center gap-2"
               >
                 <Linkedin size={20} />
                 LinkedIn
               </a>
               <button
                 onClick={() => onNavigate('contact')}
-                className={`px-6 py-3 bg-white text-gray-900 rounded-lg font-semibold border-2 border-gray-300 ${getPrimaryHoverBorderColor()} hover:shadow-lg transform hover:-translate-y-1 transition-all flex items-center gap-2`}
+                className="px-6 py-3 bg-burgundy-800 text-white rounded-lg font-semibold hover:bg-burgundy-900 hover:shadow-lg transform hover:-translate-y-1 transition-all flex items-center gap-2"
               >
                 <Calendar size={20} />
                 Prendre RDV
               </button>
+              <a
+                href="/cv.pdf"
+                download
+                className="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 hover:shadow-lg transform hover:-translate-y-1 transition-all flex items-center gap-2"
+              >
+                <Download size={20} />
+                Télécharger CV
+              </a>
             </div>
           </div>
           <div className="relative">
@@ -83,15 +91,15 @@ export default function HeroSection({ personalInfo, siteConfig, onNavigate }: He
 
         {/* Metric Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-          <div className="bg-gradient-to-br from-burgundy-50 to-white p-6 rounded-xl shadow-md border border-burgundy-100">
-            <div className="text-4xl md:text-5xl font-bold text-burgundy-800 mb-2">150+</div>
+          <div className="bg-white p-6 rounded-xl shadow-md border-2 border-olive-600">
+            <div className="text-4xl md:text-5xl font-bold text-olive-700 mb-2">150+</div>
             <div className="text-sm text-gray-600">Contrats signés</div>
           </div>
-          <div className="bg-gradient-to-br from-gold-50 to-white p-6 rounded-xl shadow-md border border-gold-100">
-            <div className="text-4xl md:text-5xl font-bold text-gold-700 mb-2">80K€</div>
+          <div className="bg-white p-6 rounded-xl shadow-md border-2 border-olive-600">
+            <div className="text-4xl md:text-5xl font-bold text-olive-700 mb-2">80K€</div>
             <div className="text-sm text-gray-600">CA généré</div>
           </div>
-          <div className="bg-gradient-to-br from-olive-50 to-white p-6 rounded-xl shadow-md border border-olive-100">
+          <div className="bg-white p-6 rounded-xl shadow-md border-2 border-olive-600">
             <div className="text-4xl md:text-5xl font-bold text-olive-700 mb-2">92%</div>
             <div className="text-sm text-gray-600">Taux de rétention</div>
           </div>

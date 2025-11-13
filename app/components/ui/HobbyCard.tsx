@@ -12,10 +12,10 @@ interface HobbyCardProps {
 
 const colorClasses: Record<string, { bg: string; text: string }> = {
   pink: { bg: 'from-burgundy-50', text: 'text-burgundy-800' },
-  purple: { bg: 'from-gold-50', text: 'text-gold-600' },
-  blue: { bg: 'from-blue-50', text: 'text-blue-500' },
-  green: { bg: 'from-green-50', text: 'text-green-500' },
-  yellow: { bg: 'from-yellow-50', text: 'text-yellow-500' },
+  purple: { bg: 'from-purple-50', text: 'text-purple-600' },
+  blue: { bg: 'from-blue-50', text: 'text-blue-600' },
+  green: { bg: 'from-olive-50', text: 'text-olive-600' },
+  yellow: { bg: 'from-olive-50', text: 'text-olive-600' },
 };
 
 export default function HobbyCard({ iconName, title, description, color }: HobbyCardProps) {

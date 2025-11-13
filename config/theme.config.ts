@@ -7,28 +7,34 @@
 
 export const themeConfig = {
   brand: {
-    // Primary brand color (custom burgundy: #9e1533)
+    // Primary brand color (custom olive: #708246)
     primary: {
+      color: 'olive',
+      shade: '600',
+    },
+
+    // Accent color 1: Burgundy for important CTAs (custom burgundy: #9e1533)
+    accent1: {
       color: 'burgundy',
       shade: '800',
     },
 
-    // Secondary brand color (custom gold: #dc8f09)
-    secondary: {
-      color: 'gold',
+    // Accent color 2: Royal Blue for secondary actions
+    accent2: {
+      color: 'blue',
       shade: '600',
     },
 
-    // Brand gradient (used in hero, navigation, buttons)
-    // Olive to Gold gradient
+    // Brand gradient (used in hero, navigation)
+    // Olive gradient
     gradient: {
       from: {
         color: 'olive',
         shade: '600',
       },
       to: {
-        color: 'gold',
-        shade: '600',
+        color: 'olive',
+        shade: '700',
       },
     },
 
@@ -36,11 +42,11 @@ export const themeConfig = {
     gradientLight: {
       from: {
         color: 'olive',
-        shade: '500',
+        shade: '400',
       },
       to: {
-        color: 'gold',
-        shade: '500',
+        color: 'olive',
+        shade: '600',
       },
     },
   },
