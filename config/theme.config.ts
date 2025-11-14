@@ -6,34 +6,41 @@
  */
 
 /**
- * Clean & Punchy Color Palette
+ * Vibrant Color Palette - Amber, Scarlet, Coral & Teal
  *
- * Primary: Rouge vif #D63031 - CTAs principaux, chiffres clés
- * Secondary: Bleu électrique #0984E3 - CTAs secondaires, accents
+ * Primary: Coral #f65156 - CTAs principaux, chiffres clés
+ * Secondary: Teal Green #009292 - CTAs secondaires, accents frais
+ * Accent: Amber #ffce13 - Highlights, métriques positives, succès
+ * Intensity: Scarlet #88070b - Emphase forte, éléments d'urgence
  * Text: Gris anthracite #2D3436 - Textes principaux
  * TextSecondary: Gris moyen #636E72 - Textes secondaires
- * Accent: Vert succès #00B894 - Métriques positives (92%)
  * Background: Blanc #FFFFFF - Fond principal
  * BackgroundAlt: Gris clair #F5F6FA - Sections alternées
  */
 export const themeConfig = {
   brand: {
-    // Primary brand color: Rouge vif
+    // Primary brand color: Coral
     primary: {
-      color: 'brand-red',
-      shade: '600',
+      color: 'brand-coral',
+      shade: '500',
     },
 
-    // Secondary brand color: Bleu électrique
+    // Secondary brand color: Teal Green
     secondary: {
-      color: 'brand-blue',
+      color: 'brand-teal',
       shade: '500',
     },
 
-    // Success color: Vert
+    // Success/Highlight color: Amber
     success: {
-      color: 'brand-green',
+      color: 'brand-amber',
       shade: '500',
+    },
+
+    // Intensity color: Scarlet
+    intensity: {
+      color: 'brand-scarlet',
+      shade: '700',
     },
 
     // Text colors
@@ -57,27 +64,39 @@ export const themeConfig = {
       },
     },
 
-    // Brand gradient (used in some sections)
+    // Brand gradient (Coral to Teal - warm to cool)
     gradient: {
       from: {
-        color: 'brand-red',
-        shade: '600',
+        color: 'brand-coral',
+        shade: '500',
       },
       to: {
-        color: 'brand-red',
-        shade: '700',
+        color: 'brand-teal',
+        shade: '500',
       },
     },
 
     // Lighter gradient variant
     gradientLight: {
       from: {
-        color: 'brand-red',
+        color: 'brand-coral',
         shade: '400',
       },
       to: {
-        color: 'brand-red',
-        shade: '600',
+        color: 'brand-teal',
+        shade: '400',
+      },
+    },
+
+    // Warm gradient (Amber to Coral)
+    gradientWarm: {
+      from: {
+        color: 'brand-amber',
+        shade: '500',
+      },
+      to: {
+        color: 'brand-coral',
+        shade: '500',
       },
     },
   },

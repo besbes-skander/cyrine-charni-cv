@@ -44,7 +44,7 @@ export default function HeroSection({ personalInfo, siteConfig, onNavigate }: He
 
         {/* Title and Experience */}
         <div className="mb-8">
-          <h2 className="text-2xl md:text-3xl font-semibold text-brand-coral-300 mb-4">
+          <h2 className="text-2xl md:text-3xl font-semibold text-brand-coral-500 mb-4">
             {personalInfo.headline}
           </h2>
           <p className="text-lg text-brand-gray-500">
@@ -55,17 +55,17 @@ export default function HeroSection({ personalInfo, siteConfig, onNavigate }: He
         {/* Contact Info */}
         <div className="flex flex-wrap gap-x-6 gap-y-3 mb-8 text-brand-gray-500">
           <div className="flex items-center gap-2">
-            <MapPin size={18} className="text-brand-coral-300" />
+            <MapPin size={18} className="text-brand-coral-500" />
             <span>{personalInfo.location}</span>
           </div>
           <div className="flex items-center gap-2">
-            <Mail size={18} className="text-brand-coral-300" />
-            <a href={`mailto:${siteConfig.contact.email}`} className="hover:text-brand-coral-300 transition-colors">
+            <Mail size={18} className="text-brand-teal-500" />
+            <a href={`mailto:${siteConfig.contact.email}`} className="hover:text-brand-teal-500 transition-colors">
               {siteConfig.contact.email}
             </a>
           </div>
           <div className="flex items-center gap-2">
-            <Phone size={18} className="text-brand-coral-300" />
+            <Phone size={18} className="text-brand-amber-500" />
             <span>{siteConfig.contact.phone}</span>
           </div>
         </div>
@@ -76,14 +76,14 @@ export default function HeroSection({ personalInfo, siteConfig, onNavigate }: He
             href={siteConfig.links.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-brand-coral-300 text-white rounded-lg font-medium hover:bg-brand-coral-400 transition-colors flex items-center gap-2"
+            className="px-6 py-3 bg-brand-teal-500 text-white rounded-lg font-medium hover:bg-brand-teal-600 transition-colors flex items-center gap-2"
           >
             <Linkedin size={20} />
             LinkedIn
           </a>
           <button
             onClick={() => onNavigate('contact')}
-            className="px-6 py-3 bg-brand-coral-300 text-white rounded-lg font-medium hover:bg-brand-coral-400 transition-colors flex items-center gap-2"
+            className="px-6 py-3 bg-brand-coral-500 text-white rounded-lg font-medium hover:bg-brand-coral-600 transition-colors flex items-center gap-2"
           >
             <Calendar size={20} />
             Prendre RDV
@@ -91,7 +91,7 @@ export default function HeroSection({ personalInfo, siteConfig, onNavigate }: He
           <a
             href="/cv.pdf"
             download
-            className="px-6 py-3 border-2 border-brand-gray-200 text-brand-gray-800 rounded-lg font-medium hover:border-brand-gray-300 hover:bg-brand-gray-50 transition-colors flex items-center gap-2"
+            className="px-6 py-3 border-2 border-brand-teal-500 text-brand-teal-600 rounded-lg font-medium hover:bg-brand-teal-50 transition-colors flex items-center gap-2"
           >
             <Download size={20} />
             Télécharger CV
@@ -101,17 +101,17 @@ export default function HeroSection({ personalInfo, siteConfig, onNavigate }: He
         {/* Inline Metrics with separators */}
         <div className="flex flex-wrap items-center gap-4 text-sm text-brand-gray-500 border-t border-brand-gray-200 pt-8">
           <div className="flex items-baseline gap-2">
-            <span className="text-3xl font-bold text-brand-coral-300">150+</span>
+            <span className="text-3xl font-bold text-brand-coral-500">150+</span>
             <span>Contrats signés</span>
           </div>
           <span className="text-brand-gray-300 hidden sm:block">|</span>
           <div className="flex items-baseline gap-2">
-            <span className="text-3xl font-bold text-brand-coral-300">80K€</span>
+            <span className="text-3xl font-bold text-brand-teal-500">80K€</span>
             <span>CA généré</span>
           </div>
           <span className="text-brand-gray-300 hidden sm:block">|</span>
           <div className="flex items-baseline gap-2">
-            <span className="text-3xl font-bold text-brand-coral-300">92%</span>
+            <span className="text-3xl font-bold text-brand-amber-500">92%</span>
             <span>Taux de rétention</span>
           </div>
         </div>

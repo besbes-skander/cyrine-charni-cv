@@ -45,14 +45,14 @@ export default function ContactSection({ siteConfig, contactData }: ContactSecti
             href={siteConfig.links.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:text-brand-coral-300 transition-colors"
+            className="flex items-center gap-2 hover:text-brand-coral-500 transition-colors"
           >
             <Linkedin size={24} />
             <span className="font-medium">LinkedIn</span>
           </a>
           <a
             href={`tel:${siteConfig.contact.phoneRaw}`}
-            className="flex items-center gap-2 hover:text-brand-coral-300 transition-colors"
+            className="flex items-center gap-2 hover:text-brand-teal-500 transition-colors"
           >
             <Phone size={24} />
             <span className="font-medium">{siteConfig.contact.phone}</span>
@@ -64,7 +64,7 @@ export default function ContactSection({ siteConfig, contactData }: ContactSecti
           <div className="grid md:grid-cols-2 gap-4 text-left">
             {contactData.availability.map((item, idx) => (
               <div key={idx} className="flex items-center gap-3">
-                <span className="text-brand-coral-300">✓</span>
+                <span className="text-brand-amber-500">✓</span>
                 <span className="text-brand-gray-500">{item}</span>
               </div>
             ))}

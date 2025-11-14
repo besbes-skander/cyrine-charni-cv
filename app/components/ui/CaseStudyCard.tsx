@@ -13,7 +13,7 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
     <div className="bg-white p-10 rounded-lg border border-brand-gray-200">
       {/* Header */}
       <div className="flex items-start gap-4 mb-8">
-        <div className="bg-brand-coral-300 p-3 rounded-lg">
+        <div className="bg-brand-coral-500 p-3 rounded-lg">
           {getIcon(caseStudy.icon, { className: 'text-white', size: 28 })}
         </div>
         <div>
@@ -83,7 +83,7 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
         <div className="bg-brand-gray-50 p-6 rounded-lg border-t border-brand-gray-200">
           <h4 className="font-semibold text-brand-gray-800 mb-4">Impact</h4>
           <div className="text-center">
-            <div className="text-5xl font-bold text-brand-coral-300 mb-2">{caseStudy.impact.value}</div>
+            <div className="text-5xl font-bold text-brand-amber-500 mb-2">{caseStudy.impact.value}</div>
             <div className="text-brand-gray-500">{caseStudy.impact.label}</div>
             <div className="mt-4 text-sm text-brand-gray-500">
               {caseStudy.impact.detail}
