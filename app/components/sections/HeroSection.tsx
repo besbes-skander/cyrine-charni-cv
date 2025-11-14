@@ -76,14 +76,14 @@ export default function HeroSection({ personalInfo, siteConfig, onNavigate }: He
             href={siteConfig.links.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-brand-coral-500 text-white rounded-lg font-medium hover:bg-brand-coral-600 transition-colors flex items-center gap-2"
+            className="px-6 py-3 bg-brand-teal-500 text-white rounded-lg font-medium hover:bg-brand-teal-600 transition-colors flex items-center gap-2"
           >
             <Linkedin size={20} />
             LinkedIn
           </a>
           <button
             onClick={() => onNavigate('contact')}
-            className="px-6 py-3 bg-brand-teal-500 text-white rounded-lg font-medium hover:bg-brand-teal-600 transition-colors flex items-center gap-2"
+            className="px-6 py-3 bg-brand-coral-500 text-white rounded-lg font-medium hover:bg-brand-coral-600 transition-colors flex items-center gap-2"
           >
             <Calendar size={20} />
             Prendre RDV
