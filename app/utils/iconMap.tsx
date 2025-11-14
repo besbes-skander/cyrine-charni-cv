@@ -13,6 +13,7 @@ import {
   Book,
   Plane,
   Music,
+  Compass,
   LucideProps
 } from 'lucide-react';
 import { IconName } from '@/types';
@@ -32,11 +33,16 @@ const iconMap: Record<IconName, React.ComponentType<LucideProps>> = {
   Book,
   Plane,
   Music,
+  Compass,
 };
 
 export const getIcon = (name: IconName, props?: LucideProps) => {
   const Icon = iconMap[name];
   return Icon ? <Icon {...props} /> : null;
+};
+
+export const getIconComponent = (name: string): React.ComponentType<LucideProps> | null => {
+  return iconMap[name as IconName] || null;
 };
 
 export default iconMap;
