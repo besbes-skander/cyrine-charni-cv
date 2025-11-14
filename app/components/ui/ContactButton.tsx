@@ -15,8 +15,8 @@ export default function ContactButton({ href, icon, children, variant, external 
   const baseClasses = "flex items-center justify-center gap-3 p-6 rounded-lg font-medium text-lg transition-colors";
 
   const variantClasses = variant === 'primary'
-    ? "bg-brand-coral-300 text-white hover:bg-brand-coral-400"
-    : "bg-white text-brand-gray-800 border-2 border-brand-gray-200 hover:border-brand-gray-300 hover:bg-brand-gray-50";
+    ? "bg-brand-coral-500 text-white hover:bg-brand-coral-600"
+    : "bg-brand-teal-500 text-white hover:bg-brand-teal-600";
 
   const externalProps = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
 
