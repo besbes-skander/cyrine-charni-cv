@@ -11,7 +11,7 @@ export default function CaseStudiesSection({ caseStudies }: CaseStudiesSectionPr
   return (
     <div className="py-24 px-6 bg-brand-gray-50 min-h-screen flex items-center">
       <div className="max-w-5xl mx-auto w-full">
-        <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-800 mb-16 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-brand-coral-500 mb-16 text-center">
           Mes réalisations concrètes
         </h2>
 

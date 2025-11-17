@@ -43,7 +43,7 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
   return (
     <div className="py-24 px-6 bg-brand-gray-50 min-h-screen flex items-center">
       <div className="max-w-5xl mx-auto w-full">
-        <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-800 mb-16 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-brand-coral-500 mb-16 text-center">
           Qui suis-je au-delà du CV ?
         </h2>
         <div className="grid md:grid-cols-2 gap-12 mb-16">
@@ -63,7 +63,7 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
 
         {/* Valeurs */}
         <div className="bg-white p-10 rounded-lg border border-brand-gray-200">
-          <h3 className="text-2xl font-semibold mb-8 text-center text-brand-gray-800">Mes valeurs professionnelles</h3>
+          <h3 className="text-2xl font-semibold mb-8 text-center text-brand-coral-500">Mes valeurs professionnelles</h3>
           <div className="grid md:grid-cols-4 gap-8">
             {values.map((val, idx) => (
               <ValueCard key={idx} {...val} />

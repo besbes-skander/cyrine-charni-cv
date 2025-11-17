@@ -10,22 +10,22 @@
   },
   "motivations": [
     {
-      "icon": "",
+      "icon": "Compass",
       "title": "Autonomie & liberté",
       "description": "Je m'épanouis quand on me fait confiance et qu'on me laisse piloter mes projets"
     },
     {
-      "icon": "",
+      "icon": "TrendingUp",
       "title": "Impact mesurable",
       "description": "J'adore voir le fruit de mon travail : un contrat signé, un CA qui augmente"
     },
     {
-      "icon": "",
+      "icon": "Heart",
       "title": "Relation client forte",
       "description": "Mon moteur, c'est la satisfaction client et les voir réussir"
     },
     {
-      "icon": "",
+      "icon": "Users",
       "title": "Esprit d'équipe",
       "description": "J'aime les équipes où on se soutient et célèbre les victoires ensemble"
     }
