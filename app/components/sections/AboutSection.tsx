@@ -24,7 +24,7 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
             newParts.push(splitPart);
             if (idx < splitParts.length - 1) {
               newParts.push(
-                <span key={`${highlight.text}-${idx}`} className="font-semibold text-brand-coral-300">
+                <span key={`${highlight.text}-${idx}`} className="font-semibold">
                   {highlight.text}
                 </span>
               );
