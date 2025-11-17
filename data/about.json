@@ -1,11 +1,19 @@
 {
   "journey": {
     "title": "Mon parcours",
-    "content": "Je suis Cyrine, 30 ans, Tunisienne installée à Paris depuis 2 ans. Mon parcours ? Un mélange de marketing digital, de vente terrain et de gestion de projets.\n\nEn 2022, j'ai quitté la Tunisie pour me challenger en France. J'ai repris les études en alternance (Mastère Business Development) tout en bossant chez For Me Lab. Aujourd'hui, je cherche ma prochaine aventure dans une scale-up où je pourrai combiner ce que j'aime : la relation client, l'autonomie et les résultats concrets.",
+    "content": "Mon parcours ? Un mix atypique : head of digital marketing, entrepreneure, account manager, business developer, cheffe de projet. Chaque expérience m'a appris quelque chose d'essentiel : comment générer du pipeline, convertir des leads, et surtout créer des relations clients qui durent.\n\nAujourd'hui, je cherche où je pourrai combiner tout ça : impact mesurable, autonomie et esprit d'équipe.",
     "highlights": [
-      { "text": "marketing digital", "color": "pink" },
-      { "text": "vente terrain", "color": "purple" },
-      { "text": "gestion de projets", "color": "blue" }
+      { "text": "head of digital marketing", "color": "pink" },
+      { "text": "entrepreneure", "color": "purple" },
+      { "text": "account manager", "color": "blue" },
+      { "text": "business developer", "color": "pink" },
+      { "text": "cheffe de projet", "color": "purple" },
+      { "text": "générer du pipeline", "color": "blue" },
+      { "text": "convertir des leads", "color": "pink" },
+      { "text": "relations clients", "color": "purple" },
+      { "text": "impact mesurable", "color": "blue" },
+      { "text": "autonomie", "color": "pink" },
+      { "text": "esprit d'équipe", "color": "purple" }
     ]
   },
   "motivations": [
