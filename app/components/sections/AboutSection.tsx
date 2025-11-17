@@ -11,33 +11,41 @@ interface AboutSectionProps {
 }
 
 export default function AboutSection({ journey, motivations, values }: AboutSectionProps) {
-  // Render journey content with highlighted text
+  // Render journey content with highlighted text, line by line
   const renderJourneyContent = (content: string, highlights: typeof journey.highlights) => {
-    let parts: (string | JSX.Element)[] = [content];
+    const lines = content.split('\n');
 
-    highlights.forEach((highlight) => {
-      const newParts: (string | JSX.Element)[] = [];
-      parts.forEach((part) => {
-        if (typeof part === 'string') {
-          const splitParts = part.split(highlight.text);
-          splitParts.forEach((splitPart, idx) => {
-            newParts.push(splitPart);
-            if (idx < splitParts.length - 1) {
-              newParts.push(
-                <span key={`${highlight.text}-${idx}`} className="font-semibold">
-                  {highlight.text}
-                </span>
-              );
-            }
-          });
-        } else {
-          newParts.push(part);
-        }
+    return lines.map((line, lineIdx) => {
+      let parts: (string | JSX.Element)[] = [line];
+
+      highlights.forEach((highlight) => {
+        const newParts: (string | JSX.Element)[] = [];
+        parts.forEach((part) => {
+          if (typeof part === 'string') {
+            const splitParts = part.split(highlight.text);
+            splitParts.forEach((splitPart, idx) => {
+              newParts.push(splitPart);
+              if (idx < splitParts.length - 1) {
+                newParts.push(
+                  <span key={`${highlight.text}-${idx}-${lineIdx}`} className="font-semibold">
+                    {highlight.text}
+                  </span>
+                );
+              }
+            });
+          } else {
+            newParts.push(part);
+          }
+        });
+        parts = newParts;
       });
-      parts = newParts;
-    });
 
-    return parts;
+      return (
+        <p key={lineIdx} className="mb-4 last:mb-0">
+          {parts}
+        </p>
+      );
+    });
   };
 
   return (
@@ -52,7 +60,7 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
           {/* Mon parcours - colonne gauche */}
           <div className="bg-white p-8 rounded-xl border border-brand-gray-200 shadow-sm hover:shadow-md transition-shadow">
             <h3 className="text-2xl font-semibold mb-6 text-brand-gray-800">{journey.title}</h3>
-            <div className="text-brand-gray-500 leading-relaxed space-y-4">
+            <div className="text-brand-gray-500 leading-relaxed">
               {renderJourneyContent(journey.content, journey.highlights)}
             </div>
           </div>
