@@ -41,30 +41,37 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
   };
 
   return (
-    <div className="py-24 px-6 bg-brand-gray-50 min-h-screen flex items-center">
-      <div className="max-w-5xl mx-auto w-full">
+    <div className="py-24 px-6 bg-brand-gray-50 min-h-screen">
+      <div className="max-w-7xl mx-auto w-full">
         <h2 className="text-3xl md:text-4xl font-bold text-brand-coral-500 mb-16 text-center">
           Qui suis-je au-delà du CV ?
         </h2>
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
-          <div className="bg-white p-10 rounded-lg border border-brand-gray-200">
+
+        {/* Layout moderne avec scroll */}
+        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+          {/* Mon parcours - colonne gauche */}
+          <div className="bg-white p-8 rounded-xl border border-brand-gray-200 shadow-sm hover:shadow-md transition-shadow">
             <h3 className="text-2xl font-semibold mb-6 text-brand-gray-800">{journey.title}</h3>
-            <p className="text-brand-gray-500 leading-relaxed">
+            <div className="text-brand-gray-500 leading-relaxed space-y-4">
               {renderJourneyContent(journey.content, journey.highlights)}
-            </p>
+            </div>
           </div>
-          <div className="space-y-5">
-            <h3 className="text-2xl font-semibold mb-6 text-brand-gray-800">Ce qui me fait vibrer</h3>
-            {motivations.map((motivation, idx) => (
-              <MotivationCard key={idx} {...motivation} />
-            ))}
+
+          {/* Ce qui me stimule - colonne droite */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-6 text-brand-gray-800">Ce qui me stimule</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-[600px] overflow-y-auto pr-2 scrollbar-thin">
+              {motivations.map((motivation, idx) => (
+                <MotivationCard key={idx} {...motivation} />
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Valeurs */}
-        <div className="bg-white p-10 rounded-lg border border-brand-gray-200">
+        <div className="bg-white p-10 rounded-xl border border-brand-gray-200 shadow-sm">
           <h3 className="text-2xl font-semibold mb-8 text-center text-brand-coral-500">Mes valeurs professionnelles</h3>
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((val, idx) => (
               <ValueCard key={idx} {...val} />
             ))}

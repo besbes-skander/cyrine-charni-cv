@@ -1,41 +1,41 @@
 {
   "journey": {
     "title": "Mon parcours",
-    "content": "Mon parcours ? Un mix atypique : head of digital marketing, entrepreneure, account manager, business developer, cheffe de projet. Chaque expérience m'a appris quelque chose d'essentiel : comment générer du pipeline, convertir des leads, et surtout créer des relations clients qui durent.\n\nAujourd'hui, je cherche où je pourrai combiner tout ça : impact mesurable, autonomie et esprit d'équipe.",
+    "content": "Mon fil rouge : comprendre les besoins, structurer une réponse claire et coordonner l'action pour que ça avance (vraiment)\n\nIssue d'un double master en marketing digital & business development, j'ai travaillé dans la tech, la logistique, le mobilier et la musique.\n\nMon profil est à la croisée du stratégique et de l'opérationnel. Du cadrage à la livraison, je pilote des projets complexes (et j'aime ça)\n\nAujourd'hui, je souhaite rejoindre une entreprise qui valorise la rigueur, l'agilité collective et le goût de faire avancer les choses, concrètement.",
     "highlights": [
-      { "text": "head of digital marketing", "color": "pink" },
-      { "text": "entrepreneure", "color": "purple" },
-      { "text": "account manager", "color": "blue" },
-      { "text": "business developer", "color": "pink" },
-      { "text": "cheffe de projet", "color": "purple" },
-      { "text": "générer du pipeline", "color": "blue" },
-      { "text": "convertir des leads", "color": "pink" },
-      { "text": "relations clients", "color": "purple" },
-      { "text": "impact mesurable", "color": "blue" },
-      { "text": "autonomie", "color": "pink" },
-      { "text": "esprit d'équipe", "color": "purple" }
+      { "text": "comprendre les besoins", "color": "pink" },
+      { "text": "structurer", "color": "purple" },
+      { "text": "coordonner l'action", "color": "blue" },
+      { "text": "marketing digital & business development", "color": "pink" },
+      { "text": "stratégique", "color": "purple" },
+      { "text": "opérationnel", "color": "blue" },
+      { "text": "cadrage", "color": "pink" },
+      { "text": "livraison", "color": "purple" },
+      { "text": "projets complexes", "color": "blue" },
+      { "text": "rigueur", "color": "pink" },
+      { "text": "agilité collective", "color": "purple" }
     ]
   },
   "motivations": [
     {
-      "icon": "Compass",
-      "title": "Autonomie & liberté",
-      "description": "Je m'épanouis quand on me fait confiance et qu'on me laisse piloter mes projets"
+      "icon": "Flame",
+      "title": "🔥 Résoudre l'insoluble",
+      "description": "Les dossiers clients complexes où tout le monde cale ? C'est mon kiff. Je creuse, je trouve, je transforme le \"impossible\" en \"fait\"."
     },
     {
       "icon": "TrendingUp",
-      "title": "Impact mesurable",
-      "description": "J'adore voir le fruit de mon travail : un contrat signé, un CA qui augmente"
+      "title": "📈 L'impact qui compte",
+      "description": "Mon moteur : voir les résultats. Un client satisfait qui recommande, un CA qui explose, une équipe qui cartonne. Le concret, pas les slides."
     },
     {
-      "icon": "Heart",
-      "title": "Relation client forte",
-      "description": "Mon moteur, c'est la satisfaction client et les voir réussir"
+      "icon": "Zap",
+      "title": "⚡ Sprint sans bullshit",
+      "description": "Pas 15 réunions de cadrage. On structure, on lance, on ajuste. L'agilité dans le vrai sens du terme."
     },
     {
-      "icon": "Users",
-      "title": "Esprit d'équipe",
-      "description": "J'aime les équipes où on se soutient et célèbre les victoires ensemble"
+      "icon": "Target",
+      "title": "🎯 Autonomie + Organisation = 🚀",
+      "description": "Je veux piloter sans qu'on me tienne la main. Mais dans un environnement structuré, où les objectifs sont clairs et les outils sont là."
     }
   ],
   "values": [
