@@ -1,33 +1,36 @@
 {
   "journey": {
-    "title": "Mon parcours",
-    "content": "Je suis Cyrine, 30 ans, Tunisienne installée à Paris depuis 2 ans. Mon parcours ? Un mélange de marketing digital, de vente terrain et de gestion de projets.\n\nEn 2022, j'ai quitté la Tunisie pour me challenger en France. J'ai repris les études en alternance (Mastère Business Development) tout en bossant chez For Me Lab. Aujourd'hui, je cherche ma prochaine aventure dans une scale-up où je pourrai combiner ce que j'aime : la relation client, l'autonomie et les résultats concrets.",
+    "title": "Mon ADN pro",
+    "content": "Mon fil rouge : comprendre les besoins, structurer une réponse claire et coordonner l'action pour que ça avance (vraiment)\nIssue d'un double master en marketing digital & business development, j'ai travaillé dans la tech, la logistique, le mobilier et la musique.\nMon profil est à la croisée du stratégique et de l'opérationnel. Du cadrage à la livraison, je pilote des projets complexes (et j'aime ça)\nAujourd'hui, je souhaite rejoindre une entreprise qui valorise la rigueur, l'agilité collective et le goût de faire avancer les choses, concrètement.",
     "highlights": [
-      { "text": "marketing digital", "color": "pink" },
-      { "text": "vente terrain", "color": "purple" },
-      { "text": "gestion de projets", "color": "blue" }
+      { "text": "comprendre les besoins", "color": "pink" },
+      { "text": "structurer", "color": "purple" },
+      { "text": "coordonner l'action", "color": "blue" },
+      { "text": "marketing digital & business development", "color": "pink" },
+      { "text": "stratégique", "color": "purple" },
+      { "text": "opérationnel", "color": "blue" },
+      { "text": "cadrage", "color": "pink" },
+      { "text": "livraison", "color": "purple" },
+      { "text": "projets complexes", "color": "blue" },
+      { "text": "rigueur", "color": "pink" },
+      { "text": "agilité collective", "color": "purple" }
     ]
   },
   "motivations": [
     {
-      "icon": "Compass",
-      "title": "Autonomie & liberté",
-      "description": "Je m'épanouis quand on me fait confiance et qu'on me laisse piloter mes projets"
+      "icon": "Puzzle",
+      "title": "Les défis clients",
+      "description": "Je suis attirée par la complexité et le challenge, c'est dans ces moments que je donne le meilleur de moi même."
     },
     {
       "icon": "TrendingUp",
-      "title": "Impact mesurable",
-      "description": "J'adore voir le fruit de mon travail : un contrat signé, un CA qui augmente"
+      "title": "L'impact concret",
+      "description": "Mon carburant, c'est voir les KPI bouger dans le bon sens. Un taux de rétention qui grimpe, un NPS qui décolle, des objectifs de conversion atteints."
     },
     {
-      "icon": "Heart",
-      "title": "Relation client forte",
-      "description": "Mon moteur, c'est la satisfaction client et les voir réussir"
-    },
-    {
-      "icon": "Users",
-      "title": "Esprit d'équipe",
-      "description": "J'aime les équipes où on se soutient et célèbre les victoires ensemble"
+      "icon": "Target",
+      "title": "La quête de SENS",
+      "description": "Travailler pour quelque chose qui a un impact réel"
     }
   ],
   "values": [

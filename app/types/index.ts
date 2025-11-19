@@ -197,4 +197,5 @@ export type IconName =
   | 'Book'
   | 'Plane'
   | 'Music'
-  | 'Compass';
+  | 'Compass'
+  | 'Puzzle';
