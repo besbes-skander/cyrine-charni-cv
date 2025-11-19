@@ -76,14 +76,14 @@ export default function HeroSection({ personalInfo, siteConfig, onNavigate }: He
             href={siteConfig.links.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-brand-teal-500 text-white rounded-lg font-medium hover:bg-brand-teal-600 transition-colors flex items-center gap-2"
+            className="px-6 py-3 bg-brand-teal-500 text-white rounded-[30px] font-medium hover:bg-brand-teal-600 transition-all hover:-translate-y-1 hover:shadow-lg flex items-center gap-2"
           >
             <Linkedin size={20} />
             LinkedIn
           </a>
           <button
             onClick={() => onNavigate('contact')}
-            className="px-6 py-3 bg-brand-coral-500 text-white rounded-lg font-medium hover:bg-brand-coral-600 transition-colors flex items-center gap-2"
+            className="px-6 py-3 bg-brand-coral-500 text-white rounded-[30px] font-medium hover:bg-brand-coral-600 transition-all hover:-translate-y-1 hover:shadow-lg flex items-center gap-2"
           >
             <Calendar size={20} />
             Prendre RDV
@@ -91,7 +91,7 @@ export default function HeroSection({ personalInfo, siteConfig, onNavigate }: He
           <a
             href="/cv.pdf"
             download
-            className="px-6 py-3 border-2 border-brand-teal-500 text-brand-teal-600 rounded-lg font-medium hover:bg-brand-teal-50 transition-colors flex items-center gap-2"
+            className="px-6 py-3 border-2 border-brand-teal-500 text-brand-teal-600 rounded-[30px] font-medium hover:bg-brand-teal-50 transition-all hover:-translate-y-1 hover:shadow-lg flex items-center gap-2"
           >
             <Download size={20} />
             Télécharger CV
