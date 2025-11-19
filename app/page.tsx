@@ -12,6 +12,7 @@ import AboutSection from './components/sections/AboutSection';
 import SkillsSection from './components/sections/SkillsSection';
 import CaseStudiesSection from './components/sections/CaseStudiesSection';
 import JobSearchSection from './components/sections/JobSearchSection';
+import ValuesSection from './components/sections/ValuesSection';
 import HobbiesSection from './components/sections/HobbiesSection';
 import ContactSection from './components/sections/ContactSection';
 
@@ -93,7 +94,6 @@ export default function Home() {
           <AboutSection
             journey={typedAboutData.journey}
             motivations={typedAboutData.motivations}
-            values={typedAboutData.values}
           />
         </section>
 
@@ -114,6 +114,10 @@ export default function Home() {
             criteria={typedJobSearchData.criteria}
             summary={typedJobSearchData.summary}
           />
+        </section>
+
+        <section id="valeurs" className="fullpage-section">
+          <ValuesSection values={typedAboutData.values} />
         </section>
 
         <section id="hobbies" className="fullpage-section">

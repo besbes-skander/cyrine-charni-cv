@@ -1,12 +1,11 @@
 {
   "title": "Ce que je cherche",
   "criteria": [
-    { "label": "Poste", "value": "Customer Success Manager / Account Manager" },
-    { "label": "Secteur", "value": "SaaS, Tech, E-commerce, Fintech" },
-    { "label": "Taille", "value": "Scale-up (20-300 personnes) en croissance" },
-    { "label": "Culture", "value": "Autonomie, impact, esprit d'équipe" },
-    { "label": "Mode de travail", "value": "Remote ou Hybride (2-3j/semaine)" },
-    { "label": "Salaire", "value": "40-50K€ (fixe + variable)" }
+    { "icon": "Building2", "description": "Une entreprise où l'agilité est une réalité. Où on teste, on itère et on avance." },
+    { "icon": "User", "description": "Un rôle hybride qui mélange relation client, projets et business" },
+    { "icon": "Shield", "description": "De l'autonomie avec des objectifs clairs." },
+    { "icon": "Users", "description": "Une équipe qui se tire vers le haut et célèbre ensemble" },
+    { "icon": "Globe", "description": "Un environnement où stratégie et exécution se rejoignent" }
   ],
-  "summary": "Je cherche une scale-up où combiner ce que j'aime :\nrelation client, autonomie et résultats concrets"
+  "summary": ""
 }
