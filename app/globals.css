@@ -11,7 +11,13 @@
   }
 
   body {
-    @apply bg-gradient-to-br from-gray-50 via-blue-50 to-gray-50;
+    background-color: #FAFAFA;
+    background-image:
+      radial-gradient(circle at top left, rgba(246, 81, 86, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at top right, rgba(0, 146, 146, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at bottom left, rgba(255, 206, 19, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at bottom right, rgba(246, 81, 86, 0.15) 0%, transparent 50%);
+    background-attachment: fixed;
     overflow-x: hidden;
   }
 }
