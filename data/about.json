@@ -1,6 +1,6 @@
 {
   "journey": {
-    "title": "Mon parcours",
+    "title": "Mon ADN pro",
     "content": "Mon fil rouge : comprendre les besoins, structurer une réponse claire et coordonner l'action pour que ça avance (vraiment)\nIssue d'un double master en marketing digital & business development, j'ai travaillé dans la tech, la logistique, le mobilier et la musique.\nMon profil est à la croisée du stratégique et de l'opérationnel. Du cadrage à la livraison, je pilote des projets complexes (et j'aime ça)\nAujourd'hui, je souhaite rejoindre une entreprise qui valorise la rigueur, l'agilité collective et le goût de faire avancer les choses, concrètement.",
     "highlights": [
       { "text": "comprendre les besoins", "color": "pink" },
@@ -24,7 +24,7 @@
     },
     {
       "icon": "TrendingUp",
-      "title": "📈 L'impact qui compte",
+      "title": "L'impact qui compte",
       "description": "Mon moteur : voir les résultats. Un client satisfait qui recommande, un CA qui explose, une équipe qui cartonne. Le concret, pas les slides."
     },
     {
@@ -34,7 +34,7 @@
     },
     {
       "icon": "Target",
-      "title": "🎯 Autonomie + Organisation = 🚀",
+      "title": "Autonomie + Organisation = 🚀",
       "description": "Je veux piloter sans qu'on me tienne la main. Mais dans un environnement structuré, où les objectifs sont clairs et les outils sont là."
     }
   ],
