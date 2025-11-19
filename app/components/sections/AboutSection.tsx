@@ -49,7 +49,7 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
   };
 
   return (
-    <div className="py-24 px-6 bg-brand-gray-50 min-h-screen">
+    <div className="py-24 px-6 min-h-screen">
       <div className="max-w-7xl mx-auto w-full">
         <h2 className="text-3xl md:text-4xl font-bold text-brand-coral-500 mb-16 text-center">
           Qui suis-je au-delà du CV ?
@@ -58,7 +58,7 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
         {/* Layout moderne avec scroll */}
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {/* Mon parcours - colonne gauche */}
-          <div className="bg-white p-8 rounded-xl border border-brand-gray-200 shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-white p-8 rounded-[30px] border border-brand-gray-200 shadow-sm hover:shadow-md transition-shadow">
             <h3 className="text-2xl font-semibold mb-6 text-brand-gray-800">{journey.title}</h3>
             <div className="text-brand-gray-500 leading-relaxed">
               {renderJourneyContent(journey.content, journey.highlights)}
@@ -77,7 +77,7 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
         </div>
 
         {/* Valeurs */}
-        <div className="bg-white p-10 rounded-xl border border-brand-gray-200 shadow-sm">
+        <div className="bg-white p-10 rounded-[30px] border border-brand-gray-200 shadow-sm">
           <h3 className="text-2xl font-semibold mb-8 text-center text-brand-coral-500">Mes valeurs professionnelles</h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((val, idx) => (

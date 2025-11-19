@@ -12,7 +12,7 @@ interface HobbyCardProps {
 
 export default function HobbyCard({ iconName, title, description, color }: HobbyCardProps) {
   return (
-    <div className="bg-brand-gray-50 p-6 rounded-lg border border-brand-gray-200">
+    <div className="bg-brand-gray-50 p-6 rounded-[30px] border border-brand-gray-200">
       <div className="text-brand-coral-300 mb-4">
         {getIcon(iconName, { size: 36 })}
       </div>

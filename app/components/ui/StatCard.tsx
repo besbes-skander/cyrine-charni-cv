@@ -26,7 +26,7 @@ const positionClasses = {
 
 export default function StatCard({ value, label, position, color }: StatCardProps) {
   return (
-    <div className={`absolute ${positionClasses[position]} bg-white p-4 rounded-xl shadow-xl`}>
+    <div className={`absolute ${positionClasses[position]} bg-white p-4 rounded-[30px] shadow-xl`}>
       <div className={`text-3xl font-bold ${colorClasses[color]}`}>{value}</div>
       <div className="text-sm text-gray-600">{label}</div>
     </div>

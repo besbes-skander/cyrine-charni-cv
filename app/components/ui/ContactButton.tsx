@@ -12,7 +12,7 @@ interface ContactButtonProps {
 }
 
 export default function ContactButton({ href, icon, children, variant, external = false }: ContactButtonProps) {
-  const baseClasses = "flex items-center justify-center gap-3 p-6 rounded-lg font-medium text-lg transition-colors";
+  const baseClasses = "flex items-center justify-center gap-3 p-6 rounded-[30px] font-medium text-lg transition-all hover:-translate-y-1 hover:shadow-lg";
 
   const variantClasses = variant === 'primary'
     ? "bg-brand-coral-500 text-white hover:bg-brand-coral-600"

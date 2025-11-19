@@ -13,7 +13,7 @@ interface ContactSectionProps {
 
 export default function ContactSection({ siteConfig, contactData }: ContactSectionProps) {
   return (
-    <div className="py-24 px-6 bg-brand-gray-50 min-h-screen flex items-center">
+    <div className="py-24 px-6 min-h-screen flex items-center">
       <div className="max-w-4xl mx-auto text-center w-full">
         <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-800 mb-6">
           {contactData.title}
@@ -59,7 +59,7 @@ export default function ContactSection({ siteConfig, contactData }: ContactSecti
           </a>
         </div>
 
-        <div className="bg-white p-10 rounded-lg border border-brand-gray-200">
+        <div className="bg-white p-10 rounded-[30px] border border-brand-gray-200">
           <h3 className="font-semibold text-brand-gray-800 mb-6">Dispo pour :</h3>
           <div className="grid md:grid-cols-2 gap-4 text-left">
             {contactData.availability.map((item, idx) => (

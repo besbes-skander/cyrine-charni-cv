@@ -10,10 +10,10 @@ interface CaseStudyCardProps {
 
 export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
   return (
-    <div className="bg-white p-10 rounded-lg border border-brand-gray-200">
+    <div className="bg-white p-10 rounded-[30px] border border-brand-gray-200">
       {/* Header */}
       <div className="flex items-start gap-4 mb-8">
-        <div className="bg-brand-coral-500 p-3 rounded-lg">
+        <div className="bg-brand-coral-500 p-3 rounded-[30px]">
           {getIcon(caseStudy.icon, { className: 'text-white', size: 28 })}
         </div>
         <div>
@@ -68,7 +68,7 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
 
       {/* Results */}
       {caseStudy.results && (
-        <div className="bg-brand-gray-50 p-6 rounded-lg border-t border-brand-gray-200">
+        <div className="bg-brand-gray-50 p-6 rounded-[30px] border-t border-brand-gray-200">
           <h4 className="font-semibold text-brand-gray-800 mb-4">Les résultats</h4>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {caseStudy.results.map((stat, idx) => (
@@ -80,7 +80,7 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
 
       {/* Impact (for HUNTEED case) */}
       {caseStudy.impact && (
-        <div className="bg-brand-gray-50 p-6 rounded-lg border-t border-brand-gray-200">
+        <div className="bg-brand-gray-50 p-6 rounded-[30px] border-t border-brand-gray-200">
           <h4 className="font-semibold text-brand-gray-800 mb-4">Impact</h4>
           <div className="text-center">
             <div className="text-5xl font-bold text-brand-amber-500 mb-2">{caseStudy.impact.value}</div>
