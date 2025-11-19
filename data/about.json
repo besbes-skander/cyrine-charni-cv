@@ -18,24 +18,19 @@
   },
   "motivations": [
     {
-      "icon": "Flame",
-      "title": "🔥 Résoudre l'insoluble",
-      "description": "Les dossiers clients complexes où tout le monde cale ? C'est mon kiff. Je creuse, je trouve, je transforme le \"impossible\" en \"fait\"."
+      "icon": "Puzzle",
+      "title": "Les défis clients",
+      "description": "Je suis attirée par la complexité et le challenge, c'est dans ces moments que je donne le meilleur de moi même."
     },
     {
       "icon": "TrendingUp",
-      "title": "L'impact qui compte",
-      "description": "Mon moteur : voir les résultats. Un client satisfait qui recommande, un CA qui explose, une équipe qui cartonne. Le concret, pas les slides."
-    },
-    {
-      "icon": "Zap",
-      "title": "⚡ Sprint sans bullshit",
-      "description": "Pas 15 réunions de cadrage. On structure, on lance, on ajuste. L'agilité dans le vrai sens du terme."
+      "title": "L'impact concret",
+      "description": "Mon carburant, c'est voir les KPI bouger dans le bon sens. Un taux de rétention qui grimpe, un NPS qui décolle, des objectifs de conversion atteints."
     },
     {
       "icon": "Target",
-      "title": "Autonomie + Organisation = 🚀",
-      "description": "Je veux piloter sans qu'on me tienne la main. Mais dans un environnement structuré, où les objectifs sont clairs et les outils sont là."
+      "title": "La quête de SENS",
+      "description": "Travailler pour quelque chose qui a un impact réel"
     }
   ],
   "values": [
