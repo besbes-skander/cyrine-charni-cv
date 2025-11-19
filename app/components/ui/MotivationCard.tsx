@@ -12,7 +12,7 @@ export default function MotivationCard({ icon, title, description }: MotivationC
   const IconComponent = icon ? getIconComponent(icon) : null;
 
   return (
-    <div className="flex gap-4 items-start p-5 bg-white rounded-lg border border-brand-gray-200">
+    <div className="flex gap-4 items-start p-5 bg-white rounded-[30px] border border-brand-gray-200">
       {IconComponent && (
         <div className="flex-shrink-0 mt-0.5">
           <IconComponent className="w-5 h-5 text-brand-teal-500 opacity-70" strokeWidth={1.5} />
