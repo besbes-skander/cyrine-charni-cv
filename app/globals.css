@@ -5,7 +5,6 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -20,21 +19,6 @@
     background-attachment: fixed;
     overflow-x: hidden;
   }
-}
-
-/* Full-page scroll snap styles */
-.fullpage-container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 100vh;
-}
-
-.fullpage-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  min-height: 100vh;
-  position: relative;
 }
 
 @layer utilities {

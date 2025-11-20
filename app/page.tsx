@@ -80,8 +80,8 @@ export default function Home() {
         name={typedPersonalInfo.name}
       />
 
-      <div className="fullpage-container">
-        <section id="accueil" className="fullpage-section">
+      <div>
+        <section id="accueil">
           <HeroSection
             personalInfo={typedPersonalInfo}
             siteConfig={siteConfig}
@@ -89,25 +89,25 @@ export default function Home() {
           />
         </section>
 
-        <section id="a-propos" className="fullpage-section">
+        <section id="a-propos">
           <AboutSection
             journey={typedAboutData.journey}
             motivations={typedAboutData.motivations}
           />
         </section>
 
-        <section id="competences" className="fullpage-section">
+        <section id="competences">
           <SkillsSection
             coreSkills={typedSkillsData.coreSkills}
             toolStack={typedSkillsData.toolStack}
           />
         </section>
 
-        <section id="realisations" className="fullpage-section">
+        <section id="realisations">
           <CaseStudiesSection caseStudies={typedCaseStudiesData.caseStudies} />
         </section>
 
-        <section id="recherche" className="fullpage-section">
+        <section id="recherche">
           <JobSearchSection
             title={typedJobSearchData.title}
             criteria={typedJobSearchData.criteria}
@@ -115,7 +115,7 @@ export default function Home() {
           />
         </section>
 
-        <section id="valeurs" className="fullpage-section">
+        <section id="valeurs">
           <ValuesHobbiesSection
             values={typedAboutData.values}
             hobbiesTitle={typedHobbiesData.title}
@@ -124,7 +124,7 @@ export default function Home() {
           />
         </section>
 
-        <section id="contact" className="fullpage-section">
+        <section id="contact">
           <ContactSection
             siteConfig={siteConfig}
             contactData={typedContactData}
