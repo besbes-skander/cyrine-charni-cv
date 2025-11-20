@@ -18,7 +18,7 @@ export default function ValuesHobbiesSection({
   hobbiesTagline
 }: ValuesHobbiesSectionProps) {
   return (
-    <div className="py-24 px-6">
+    <div className="pt-24 pb-8 px-6">
       <div className="max-w-7xl mx-auto w-full space-y-16">
 
         {/* Section Valeurs professionnelles */}
