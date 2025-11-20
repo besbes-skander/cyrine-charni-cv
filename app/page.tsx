@@ -12,8 +12,7 @@ import AboutSection from './components/sections/AboutSection';
 import SkillsSection from './components/sections/SkillsSection';
 import CaseStudiesSection from './components/sections/CaseStudiesSection';
 import JobSearchSection from './components/sections/JobSearchSection';
-import ValuesSection from './components/sections/ValuesSection';
-import HobbiesSection from './components/sections/HobbiesSection';
+import ValuesHobbiesSection from './components/sections/ValuesHobbiesSection';
 import ContactSection from './components/sections/ContactSection';
 
 // Configuration
@@ -117,14 +116,11 @@ export default function Home() {
         </section>
 
         <section id="valeurs" className="fullpage-section">
-          <ValuesSection values={typedAboutData.values} />
-        </section>
-
-        <section id="hobbies" className="fullpage-section">
-          <HobbiesSection
-            title={typedHobbiesData.title}
+          <ValuesHobbiesSection
+            values={typedAboutData.values}
+            hobbiesTitle={typedHobbiesData.title}
             hobbies={typedHobbiesData.hobbies}
-            tagline={typedHobbiesData.tagline}
+            hobbiesTagline={typedHobbiesData.tagline}
           />
         </section>
 
