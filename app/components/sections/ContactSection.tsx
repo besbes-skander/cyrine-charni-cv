@@ -13,9 +13,9 @@ interface ContactSectionProps {
 
 export default function ContactSection({ siteConfig, contactData }: ContactSectionProps) {
   return (
-    <div className="pt-8 pb-24 px-6 min-h-screen flex items-center">
+    <div className="pt-6 pb-16 px-6 min-h-screen flex items-center">
       <div className="max-w-4xl mx-auto text-center w-full">
-        <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-800 mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-800 mb-4">
           {contactData.title}
         </h2>
         <p className="text-lg text-brand-gray-500 mb-12 whitespace-pre-line">

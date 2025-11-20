@@ -18,12 +18,12 @@ export default function ValuesHobbiesSection({
   hobbiesTagline
 }: ValuesHobbiesSectionProps) {
   return (
-    <div className="pt-24 pb-8 px-6">
+    <div className="pt-16 pb-8 px-6">
       <div className="max-w-7xl mx-auto w-full space-y-16">
 
         {/* Section Valeurs professionnelles */}
         <div className="bg-white p-10 rounded-[30px] border border-brand-gray-200 shadow-sm">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-coral-500 mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-coral-500 mb-8 text-center">
             Mes valeurs professionnelles
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -35,7 +35,7 @@ export default function ValuesHobbiesSection({
 
         {/* Section Mon équilibre */}
         <div className="bg-white p-10 rounded-[30px] border border-brand-gray-200 shadow-sm">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-teal-500 mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-teal-500 mb-8 text-center">
             {hobbiesTitle}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
