@@ -11,13 +11,20 @@ interface CaseStudiesSectionProps {
 
 export default function CaseStudiesSection({ caseStudies }: CaseStudiesSectionProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const handlePrevious = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
     setCurrentIndex((prev) => (prev === 0 ? caseStudies.length - 1 : prev - 1));
+    setTimeout(() => setIsTransitioning(false), 800);
   };
 
   const handleNext = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
     setCurrentIndex((prev) => (prev === caseStudies.length - 1 ? 0 : prev + 1));
+    setTimeout(() => setIsTransitioning(false), 800);
   };
 
   // Calculer les index pour gauche, centre, droite (avec wrap-around)
@@ -44,30 +51,47 @@ export default function CaseStudiesSection({ caseStudies }: CaseStudiesSectionPr
           {/* Bouton précédent */}
           <button
             onClick={handlePrevious}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-brand-coral-500 text-brand-coral-500 hover:text-white p-3 rounded-full shadow-lg transition-all hover:scale-110 border border-brand-gray-200"
+            disabled={isTransitioning}
+            className="absolute left-4 lg:left-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-brand-coral-500 text-brand-coral-500 hover:text-white p-3 rounded-full shadow-lg transition-all hover:scale-110 border border-brand-gray-200 disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label="Réalisation précédente"
           >
             <ChevronLeft size={24} />
           </button>
 
-          {/* Cards Container avec overflow pour les cartes latérales */}
-          <div className="relative overflow-hidden px-16">
-            <div className="flex items-center justify-center gap-0">
+          {/* Cards Container - Plus large, sans overflow */}
+          <div className="relative px-4 lg:px-20 py-8">
+            <div className="flex items-stretch justify-center gap-6">
               {/* Carte gauche */}
-              <div className="hidden lg:block absolute left-0 w-[500px] -translate-x-1/3 z-0 pointer-events-none">
-                <div className="scale-75 opacity-50 blur-[1px] transition-all duration-700 ease-in-out transform">
+              <div className="hidden lg:flex w-[450px] flex-shrink-0">
+                <div
+                  className={`w-full transition-all duration-800 ease-out transform ${
+                    isTransitioning ? 'translate-x-12 opacity-20' : 'translate-x-0 opacity-60'
+                  } scale-90 hover:scale-95 pointer-events-none`}
+                  style={{ filter: 'blur(0.5px)' }}
+                >
                   <CaseStudyCard caseStudy={caseStudies[leftIndex]} />
                 </div>
               </div>
 
               {/* Carte centrale */}
-              <div className="w-full lg:w-[500px] z-10 transition-all duration-700 ease-in-out transform">
-                <CaseStudyCard caseStudy={caseStudies[centerIndex]} />
+              <div className="w-full lg:w-[650px] flex-shrink-0">
+                <div
+                  className={`w-full transition-all duration-800 ease-out transform ${
+                    isTransitioning ? 'scale-95 opacity-80' : 'scale-100 opacity-100'
+                  }`}
+                >
+                  <CaseStudyCard caseStudy={caseStudies[centerIndex]} />
+                </div>
               </div>
 
               {/* Carte droite */}
-              <div className="hidden lg:block absolute right-0 w-[500px] translate-x-1/3 z-0 pointer-events-none">
-                <div className="scale-75 opacity-50 blur-[1px] transition-all duration-700 ease-in-out transform">
+              <div className="hidden lg:flex w-[450px] flex-shrink-0">
+                <div
+                  className={`w-full transition-all duration-800 ease-out transform ${
+                    isTransitioning ? '-translate-x-12 opacity-20' : 'translate-x-0 opacity-60'
+                  } scale-90 hover:scale-95 pointer-events-none`}
+                  style={{ filter: 'blur(0.5px)' }}
+                >
                   <CaseStudyCard caseStudy={caseStudies[rightIndex]} />
                 </div>
               </div>
@@ -77,22 +101,30 @@ export default function CaseStudiesSection({ caseStudies }: CaseStudiesSectionPr
           {/* Bouton suivant */}
           <button
             onClick={handleNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-brand-coral-500 text-brand-coral-500 hover:text-white p-3 rounded-full shadow-lg transition-all hover:scale-110 border border-brand-gray-200"
+            disabled={isTransitioning}
+            className="absolute right-4 lg:right-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-brand-coral-500 text-brand-coral-500 hover:text-white p-3 rounded-full shadow-lg transition-all hover:scale-110 border border-brand-gray-200 disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label="Réalisation suivante"
           >
             <ChevronRight size={24} />
           </button>
 
           {/* Indicateurs de pagination */}
-          <div className="flex justify-center gap-2 mt-8">
+          <div className="flex justify-center gap-2 mt-6">
             {caseStudies.map((_, index) => (
               <button
                 key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                onClick={() => {
+                  if (!isTransitioning) {
+                    setIsTransitioning(true);
+                    setCurrentIndex(index);
+                    setTimeout(() => setIsTransitioning(false), 800);
+                  }
+                }}
+                disabled={isTransitioning}
+                className={`h-2 rounded-full transition-all duration-300 ${
                   index === currentIndex
                     ? 'bg-brand-coral-500 w-8'
-                    : 'bg-brand-gray-300 hover:bg-brand-coral-300'
+                    : 'bg-brand-gray-300 hover:bg-brand-coral-300 w-2'
                 }`}
                 aria-label={`Aller à la réalisation ${index + 1}`}
               />
