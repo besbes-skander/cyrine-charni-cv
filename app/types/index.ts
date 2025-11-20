@@ -133,8 +133,8 @@ export interface CaseStudiesData {
 
 // Job Search
 export interface JobCriteria {
-  label: string;
-  value: string;
+  icon: IconName;
+  description: string;
 }
 
 export interface JobSearchData {
@@ -164,7 +164,7 @@ export interface Tagline {
 export interface HobbiesData {
   title: string;
   hobbies: Hobby[];
-  tagline: Tagline;
+  tagline: Tagline | null;
 }
 
 // Contact
@@ -198,4 +198,9 @@ export type IconName =
   | 'Plane'
   | 'Music'
   | 'Compass'
-  | 'Puzzle';
+  | 'Puzzle'
+  | 'Building2'
+  | 'User'
+  | 'Shield'
+  | 'Globe'
+  | 'Dices';

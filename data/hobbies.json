@@ -1,42 +1,36 @@
 {
-  "title": "Au-delà du travail",
+  "title": "Mon équilibre",
   "hobbies": [
     {
       "icon": "Heart",
-      "title": "Yoga matinal",
-      "description": "Mon rituel sacré pour démarrer la journée",
+      "title": "Yoga",
+      "description": "",
       "color": "pink"
     },
     {
       "icon": "Music",
-      "title": "Bachata",
-      "description": "Ma passion depuis 3 ans",
+      "title": "La danse",
+      "description": "",
       "color": "purple"
     },
     {
       "icon": "Plane",
       "title": "Voyages & randonnées",
-      "description": "Besoin de bouger, découvrir, m'évader",
+      "description": "",
       "color": "blue"
     },
     {
       "icon": "Book",
       "title": "Lecture",
-      "description": "Développement perso, business, romans",
+      "description": "",
       "color": "green"
     },
     {
-      "icon": "Sparkles",
-      "title": "Spiritualité",
-      "description": "Méditation, journaling, quête de sens",
+      "icon": "Dices",
+      "title": "Jeux de société",
+      "description": "",
       "color": "yellow"
     }
   ],
-  "tagline": {
-    "text": "Mon équilibre :",
-    "parts": [
-      { "text": "bosser dur", "color": "pink" },
-      { "text": "vivre pleinement", "color": "purple" }
-    ]
-  }
+  "tagline": null
 }

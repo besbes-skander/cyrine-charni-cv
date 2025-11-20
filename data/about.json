@@ -35,20 +35,20 @@
   ],
   "values": [
     {
-      "title": "Authenticité",
-      "description": "Je dis ce que je pense, je fais ce que je dis"
+      "title": "Agilité",
+      "description": "Je m'adapte vite aux changements. Nouvelle situation, nouveau contexte ? Je pivote sans perdre le cap."
     },
     {
       "title": "Résilience",
-      "description": "J'ai quitté mon pays, changé de carrière, rebondi plusieurs fois"
+      "description": "J'ai changé de pays, de carrière, rebondi plusieurs fois. Les obstacles ne m'arrêtent pas, ils me font grandir."
     },
     {
       "title": "Curiosité",
-      "description": "J'apprends constamment (AI tools, CRM, certifications...)"
+      "description": "Toujours en apprentissage : nouveaux outils (IA, CRM), nouvelles méthodes.. Stagner n'est pas une option."
     },
     {
-      "title": "Impact",
-      "description": "Je ne veux pas juste \"faire mon job\", je veux créer de la valeur réelle"
+      "title": "Engagement",
+      "description": "Quand je dis oui, c'est oui. Je m'investis à fond dans mes projets et je tiens mes promesses."
     }
   ]
 }

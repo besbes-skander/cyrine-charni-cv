@@ -2,15 +2,13 @@
 
 import { AboutData } from '@/types';
 import MotivationCard from '../ui/MotivationCard';
-import ValueCard from '../ui/ValueCard';
 
 interface AboutSectionProps {
   journey: AboutData['journey'];
   motivations: AboutData['motivations'];
-  values: AboutData['values'];
 }
 
-export default function AboutSection({ journey, motivations, values }: AboutSectionProps) {
+export default function AboutSection({ journey, motivations }: AboutSectionProps) {
   // Render journey content with highlighted text, line by line
   const renderJourneyContent = (content: string, highlights: typeof journey.highlights) => {
     const lines = content.split('\n');
@@ -56,7 +54,7 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
         </h2>
 
         {/* Layout moderne avec scroll */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid lg:grid-cols-2 gap-8">
           {/* Mon parcours - colonne gauche */}
           <div className="bg-white p-8 rounded-[30px] border border-brand-gray-200 shadow-sm hover:shadow-md transition-shadow">
             <h3 className="text-2xl font-semibold mb-6 text-brand-gray-800">{journey.title}</h3>
@@ -73,16 +71,6 @@ export default function AboutSection({ journey, motivations, values }: AboutSect
                 <MotivationCard key={idx} {...motivation} />
               ))}
             </div>
-          </div>
-        </div>
-
-        {/* Valeurs */}
-        <div className="bg-white p-10 rounded-[30px] border border-brand-gray-200 shadow-sm">
-          <h3 className="text-2xl font-semibold mb-8 text-center text-brand-coral-500">Mes valeurs professionnelles</h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((val, idx) => (
-              <ValueCard key={idx} {...val} />
-            ))}
           </div>
         </div>
       </div>
