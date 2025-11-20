@@ -164,7 +164,7 @@ export interface Tagline {
 export interface HobbiesData {
   title: string;
   hobbies: Hobby[];
-  tagline: Tagline;
+  tagline: Tagline | null;
 }
 
 // Contact
@@ -202,4 +202,5 @@ export type IconName =
   | 'Building2'
   | 'User'
   | 'Shield'
-  | 'Globe';
+  | 'Globe'
+  | 'Dices';

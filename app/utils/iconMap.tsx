@@ -19,6 +19,7 @@ import {
   User,
   Shield,
   Globe,
+  Dices,
   LucideProps
 } from 'lucide-react';
 import { IconName } from '@/types';
@@ -44,6 +45,7 @@ const iconMap: Record<IconName, React.ComponentType<LucideProps>> = {
   User,
   Shield,
   Globe,
+  Dices,
 };
 
 export const getIcon = (name: IconName, props?: LucideProps) => {

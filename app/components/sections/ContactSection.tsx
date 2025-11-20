@@ -40,7 +40,7 @@ export default function ContactSection({ siteConfig, contactData }: ContactSecti
           </ContactButton>
         </div>
 
-        <div className="flex justify-center gap-8 mb-12 text-brand-gray-500">
+        <div className="flex justify-center gap-8 text-brand-gray-500">
           <a
             href={siteConfig.links.linkedin}
             target="_blank"
@@ -59,17 +59,19 @@ export default function ContactSection({ siteConfig, contactData }: ContactSecti
           </a>
         </div>
 
-        <div className="bg-white p-10 rounded-[30px] border border-brand-gray-200">
-          <h3 className="font-semibold text-brand-gray-800 mb-6">Dispo pour :</h3>
-          <div className="grid md:grid-cols-2 gap-4 text-left">
-            {contactData.availability.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-3">
-                <span className="text-brand-amber-500">✓</span>
-                <span className="text-brand-gray-500">{item}</span>
-              </div>
-            ))}
+        {contactData.availability && contactData.availability.length > 0 && (
+          <div className="bg-white p-10 rounded-[30px] border border-brand-gray-200 mt-12">
+            <h3 className="font-semibold text-brand-gray-800 mb-6">Dispo pour :</h3>
+            <div className="grid md:grid-cols-2 gap-4 text-left">
+              {contactData.availability.map((item, idx) => (
+                <div key={idx} className="flex items-center gap-3">
+                  <span className="text-brand-amber-500">✓</span>
+                  <span className="text-brand-gray-500">{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

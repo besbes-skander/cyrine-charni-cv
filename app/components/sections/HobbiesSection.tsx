@@ -27,17 +27,19 @@ export default function HobbiesSection({ title, hobbies, tagline }: HobbiesSecti
             />
           ))}
         </div>
-        <div className="text-center mt-16">
-          <p className="text-xl font-semibold text-brand-gray-800">
-            {tagline.text}{' '}
-            {tagline.parts.map((part, idx) => (
-              <span key={idx} className="text-brand-coral-300">
-                {part.text}
-                {idx < tagline.parts.length - 1 ? ', ' : ''}
-              </span>
-            ))}
-          </p>
-        </div>
+        {tagline && (
+          <div className="text-center mt-16">
+            <p className="text-xl font-semibold text-brand-gray-800">
+              {tagline.text}{' '}
+              {tagline.parts.map((part, idx) => (
+                <span key={idx} className="text-brand-coral-300">
+                  {part.text}
+                  {idx < tagline.parts.length - 1 ? ', ' : ''}
+                </span>
+              ))}
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );
