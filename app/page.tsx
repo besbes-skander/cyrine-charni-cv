@@ -12,8 +12,7 @@ import AboutSection from './components/sections/AboutSection';
 import SkillsSection from './components/sections/SkillsSection';
 import CaseStudiesSection from './components/sections/CaseStudiesSection';
 import JobSearchSection from './components/sections/JobSearchSection';
-import ValuesSection from './components/sections/ValuesSection';
-import HobbiesSection from './components/sections/HobbiesSection';
+import ValuesHobbiesSection from './components/sections/ValuesHobbiesSection';
 import ContactSection from './components/sections/ContactSection';
 
 // Configuration
@@ -81,8 +80,8 @@ export default function Home() {
         name={typedPersonalInfo.name}
       />
 
-      <div className="fullpage-container">
-        <section id="accueil" className="fullpage-section">
+      <div>
+        <section id="accueil">
           <HeroSection
             personalInfo={typedPersonalInfo}
             siteConfig={siteConfig}
@@ -90,25 +89,25 @@ export default function Home() {
           />
         </section>
 
-        <section id="a-propos" className="fullpage-section">
+        <section id="a-propos">
           <AboutSection
             journey={typedAboutData.journey}
             motivations={typedAboutData.motivations}
           />
         </section>
 
-        <section id="competences" className="fullpage-section">
+        <section id="competences">
           <SkillsSection
             coreSkills={typedSkillsData.coreSkills}
             toolStack={typedSkillsData.toolStack}
           />
         </section>
 
-        <section id="realisations" className="fullpage-section">
+        <section id="realisations">
           <CaseStudiesSection caseStudies={typedCaseStudiesData.caseStudies} />
         </section>
 
-        <section id="recherche" className="fullpage-section">
+        <section id="recherche">
           <JobSearchSection
             title={typedJobSearchData.title}
             criteria={typedJobSearchData.criteria}
@@ -116,19 +115,16 @@ export default function Home() {
           />
         </section>
 
-        <section id="valeurs" className="fullpage-section">
-          <ValuesSection values={typedAboutData.values} />
-        </section>
-
-        <section id="hobbies" className="fullpage-section">
-          <HobbiesSection
-            title={typedHobbiesData.title}
+        <section id="valeurs">
+          <ValuesHobbiesSection
+            values={typedAboutData.values}
+            hobbiesTitle={typedHobbiesData.title}
             hobbies={typedHobbiesData.hobbies}
-            tagline={typedHobbiesData.tagline}
+            hobbiesTagline={typedHobbiesData.tagline}
           />
         </section>
 
-        <section id="contact" className="fullpage-section">
+        <section id="contact">
           <ContactSection
             siteConfig={siteConfig}
             contactData={typedContactData}

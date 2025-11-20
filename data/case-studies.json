@@ -21,7 +21,7 @@
         "points": [
           {
             "text": "Prospection multicanale",
-            "detail": "50+ appels/jour, terrain, LinkedIn"
+            "detail": "Calls, mailing, terrain, réseaux sociaux"
           },
           {
             "text": "Écoute avant vente",
@@ -93,14 +93,54 @@
           "Prospection multicanale (Salesforce, LinkedIn)",
           "Conversion & qualification via HubSpot",
           "Prise de RDV commerciaux",
-          "Gestion du closing"
+          "Gestion du closing avec réalisation des démos"
         ]
       },
       "impact": {
         "value": "+600",
         "label": "Leads qualifiés par mois",
-        "detail": "Via optimisation du pipeline Salesforce + LinkedIn Sales Navigator"
+        "detail": "Via optimisation du pipeline Salesforce + LinkedIn Sales Navigator + Hubspot"
       }
+    },
+    {
+      "id": "tdwear",
+      "icon": "Sparkles",
+      "color": "green",
+      "title": "Création & croissance de T&D Wear",
+      "role": "Co-Fondatrice",
+      "period": "2021 - 2022",
+      "challenge": {
+        "title": "Le défi",
+        "points": [
+          "Création d'une marque from scratch",
+          "Zéro budget marketing initial",
+          "Marché ultra-compétitif (fashion)",
+          "Gestion multi-casquettes (ops, ventes, service)"
+        ]
+      },
+      "strategy": {
+        "title": "Ma stratégie",
+        "points": [
+          {
+            "text": "Création & lancement",
+            "detail": "Business plan, sourcing, go-to-market"
+          },
+          {
+            "text": "Stratégie acquisition",
+            "detail": "Growth +45% CA en 6 mois"
+          },
+          {
+            "text": "Gestion complète",
+            "detail": "Supply chain, ventes, customer care"
+          }
+        ]
+      },
+      "results": [
+        { "label": "Croissance CA", "value": "+45%", "color": "green" },
+        { "label": "Période", "value": "6 mois", "color": "blue" },
+        { "label": "Pôles gérés", "value": "3", "color": "purple" },
+        { "label": "Statut", "value": "100%", "color": "pink" }
+      ]
     }
   ]
 }
