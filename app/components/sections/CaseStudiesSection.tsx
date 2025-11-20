@@ -44,34 +44,40 @@ export default function CaseStudiesSection({ caseStudies }: CaseStudiesSectionPr
           {/* Bouton précédent */}
           <button
             onClick={handlePrevious}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-brand-coral-500 text-brand-coral-500 hover:text-white p-3 rounded-full shadow-lg transition-all hover:scale-110 border border-brand-gray-200"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-brand-coral-500 text-brand-coral-500 hover:text-white p-3 rounded-full shadow-lg transition-all hover:scale-110 border border-brand-gray-200"
             aria-label="Réalisation précédente"
           >
             <ChevronLeft size={24} />
           </button>
 
-          {/* Cards Container */}
-          <div className="flex items-center justify-center gap-4 px-16">
-            {/* Carte gauche */}
-            <div className="hidden lg:block w-1/4 opacity-40 scale-85 transition-all duration-500 pointer-events-none">
-              <CaseStudyCard caseStudy={caseStudies[leftIndex]} />
-            </div>
+          {/* Cards Container avec overflow pour les cartes latérales */}
+          <div className="relative overflow-hidden px-16">
+            <div className="flex items-center justify-center gap-0">
+              {/* Carte gauche */}
+              <div className="hidden lg:block absolute left-0 w-[500px] -translate-x-1/3 z-0 pointer-events-none">
+                <div className="scale-75 opacity-50 blur-[1px] transition-all duration-700 ease-in-out transform">
+                  <CaseStudyCard caseStudy={caseStudies[leftIndex]} />
+                </div>
+              </div>
 
-            {/* Carte centrale */}
-            <div className="w-full lg:w-1/2 transition-all duration-500">
-              <CaseStudyCard caseStudy={caseStudies[centerIndex]} />
-            </div>
+              {/* Carte centrale */}
+              <div className="w-full lg:w-[500px] z-10 transition-all duration-700 ease-in-out transform">
+                <CaseStudyCard caseStudy={caseStudies[centerIndex]} />
+              </div>
 
-            {/* Carte droite */}
-            <div className="hidden lg:block w-1/4 opacity-40 scale-85 transition-all duration-500 pointer-events-none">
-              <CaseStudyCard caseStudy={caseStudies[rightIndex]} />
+              {/* Carte droite */}
+              <div className="hidden lg:block absolute right-0 w-[500px] translate-x-1/3 z-0 pointer-events-none">
+                <div className="scale-75 opacity-50 blur-[1px] transition-all duration-700 ease-in-out transform">
+                  <CaseStudyCard caseStudy={caseStudies[rightIndex]} />
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Bouton suivant */}
           <button
             onClick={handleNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-brand-coral-500 text-brand-coral-500 hover:text-white p-3 rounded-full shadow-lg transition-all hover:scale-110 border border-brand-gray-200"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-brand-coral-500 text-brand-coral-500 hover:text-white p-3 rounded-full shadow-lg transition-all hover:scale-110 border border-brand-gray-200"
             aria-label="Réalisation suivante"
           >
             <ChevronRight size={24} />
@@ -83,7 +89,7 @@ export default function CaseStudiesSection({ caseStudies }: CaseStudiesSectionPr
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-2 h-2 rounded-full transition-all ${
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
                   index === currentIndex
                     ? 'bg-brand-coral-500 w-8'
                     : 'bg-brand-gray-300 hover:bg-brand-coral-300'
